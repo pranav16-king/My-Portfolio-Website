@@ -1,0 +1,264 @@
+    :root {
+      --navy: #111b32;
+      --cyan: #22d3ee;
+      --purple: #a78bfa;
+      --white: #fff;
+    }
+
+    html,
+    body {
+      font-family: 'Inter', sans-serif;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    body[data-theme='dark'] {
+      background: linear-gradient(135deg, var(--navy), #16213e);
+      color: #fff;
+    }
+
+    body[data-theme='light'] {
+      background: #f7f8fa;
+      color: #222;
+    }
+
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .accent-gradient {
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .glow-border {
+      box-shadow: 0 0 0 2px var(--cyan), 0 0 16px var(--purple);
+      border: 2px solid var(--cyan);
+    }
+
+    .glow-hover:hover {
+      box-shadow: 0 0 18px var(--purple), 0 0 6px var(--cyan);
+      border-color: var(--purple);
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      color: #111b32 !important;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUpAnim 1s forwards;
+    }
+
+    @keyframes fadeUpAnim {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #particles-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--cyan);
+      opacity: 0.7;
+      animation: floatParticle infinite linear;
+    }
+
+    @keyframes floatParticle {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: translateY(-32px) scale(1.3);
+        opacity: 0.55;
+      }
+
+      100% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+    }
+
+    .about-bg,
+    .white-bg {
+      background: #fff;
+      color: #111b32;
+    }
+
+    .dark .about-bg,
+    .dark .white-bg {
+      background: #16213e !important;
+      color: #fff !important;
+    }
+
+    .card-bg {
+      background: #f7f8fa;
+    }
+
+    .dark .card-bg {
+      background: #1c2851;
+    }
+
+    .section-transition {
+      transition: background 0.5s, color 0.5s;
+    }
+
+    a.social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      border-radius: 50%;
+      background: #fff;
+      color: #111b32;
+      transition: 0.2s;
+      margin: 0 6px;
+    }
+
+    a.social-icon:hover {
+      background: var(--cyan);
+      color: #fff;
+      box-shadow: 0 0 10px var(--purple);
+    }
+
+    .footer-bg {
+      background: linear-gradient(90deg, #16213e 60%, #22d3ee);
+      color: #fff;
+    }
+
+    /* Wide Layout */
+    .container-wide {
+      width: 90vw;
+      max-width: 1600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container-medium {
+      width: 85vw;
+      max-width: 1500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Reduced padding/margin */
+    .section-pad {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    .section-head {
+      margin-bottom: 32px;
+    }
+
+    .section-gap {
+      gap: 20px;
+    }
+
+    .card-pad {
+      padding: 18px;
+    }
+
+    .card-mb {
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 900px) {
+
+      .container-wide,
+      .container-medium {
+        width: 97vw;
+        max-width: 100vw;
+      }
+
+      .section-pad {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+
+      .section-head {
+        margin-bottom: 18px;
+      }
+
+      .section-gap {
+        gap: 12px;
+      }
+
+      .card-pad {
+        padding: 12px;
+      }
+
+      .card-mb {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .container-wide,
+      .container-medium {
+        width: 100vw;
+        max-width: 100vw;
+      }
+
+      .section-pad {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .section-head {
+        margin-bottom: 10px;
+      }
+
+      .section-gap {
+        gap: 7px;
+      }
+
+      .card-pad {
+        padding: 8px;
+      }
+
+      .card-mb {
+        margin-bottom: 7px;
+      }
+
+      .grid-cols-3 {
+        grid-template-columns: 1fr;
+      }
+    }
+/* Hide desktop nav on mobile by default, show hamburger.
+   But if mobile menu is open (via JS), desktop nav stays hidden. */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  #mobile-menu-btn {
+    display: block !important;
+  }
+}
+@media (min-width: 769px) {
+  #mobile-menu-btn {
+    display: none !important;
+  }
+  #mobile-menu {
+    display: none !important;
+  }
+  .desktop-nav {
+    display: flex !important;
+  }
+}

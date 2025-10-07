@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pranav.dev Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts: Poppins & Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark" class="dark">
+  <nav
+    class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center shadow-lg bg-[#111b32]/90 dark:bg-white/90 backdrop-blur section-transition">
+    <a href="#home" class="text-2xl font-bold accent-gradient font-poppins">Pranav</a>
+    <ul class="desktop-nav flex gap-6 items-center font-semibold text-lg font-inter">
+      <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+      <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+      <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+      <li><a href="#certificates" class="hover:text-cyan-400 transition">Certificates</a></li>
+      <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+      <li>
+        <button id="theme-toggle" class="ml-2 text-xl" aria-label="Toggle dark mode">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </li>
+    </ul>
+    <!-- Hamburger for mobile -->
+    <button id="mobile-menu-btn" class="md:hidden text-3xl p-2" aria-label="Open mobile menu">☰</button>
+  </nav>
+  <!-- Mobile menu -->
+  <div id="mobile-menu"
+    class="fixed top-0 left-0 w-full h-full bg-[#111b32]/90 flex flex-col items-center justify-center z-50 hidden">
+    <button id="close-mobile-menu" class="absolute top-6 right-6 text-3xl p-2 text-cyan-400"
+      aria-label="Close mobile menu">✖️</button>
+    <ul class="flex flex-col gap-6 text-2xl font-semibold text-white font-inter mt-10">
+      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+      <li><a href="#certificates" onclick="closeMobileMenu()">Certificates</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home"
+    class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 dark:bg-gradient-to-br dark:from-[#111b32] dark:to-[#16213e]">
+    <div id="particles-bg"></div>
+    <div class="flex flex-col md:flex-row items-center container-wide px-6 relative z-10">
+      <div class="flex-1">
+        <div class="mb-2 text-cyan-400 font-semibold flex items-center gap-2 font-inter fade-up"
+          style="animation-delay:0.1s;">
+          <span>🤖</span> Welcome to my portfolio
+        </div>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-2 font-poppins fade-up accent-gradient"
+          style="animation-delay:0.2s;">
+          Pranav<br> Samadhan<br> <span class="accent-gradient font-poppins">Khaire</span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-2 font-inter fade-up" style="animation-delay:0.3s;">
+          Aspiring Data Scientist | AI & ML Enthusiast | Full Stack Learner
+        </p>
+        <p class="text-lg text-gray-400 mb-4 font-inter fade-up" style="animation-delay:0.4s;">
+          Second-Year Computer Science and Design student at Maharashtra Institute of Technology, Chhatrapati Sambhaji
+          Nagar.
+        </p>
+        <div class="flex gap-4 fade-up" style="animation-delay:0.5s;">
+          <a href="#projects"
+            class="px-6 py-2 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 hover:shadow-cyan-400/50 hover:scale-105 glow-hover font-inter transition">View
+            My Projects</a>
+          <a href="#certificates"
+            class="px-6 py-2 rounded-lg font-semibold shadow-lg bg-white text-[#111b32] hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">View
+            Certificates</a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative fade-up" style="animation-delay:0.6s;">
+        <div class="relative group">
+          <div
+            class="w-76 h-76 rounded-full border-4 border-cyan-400 shadow-2xl bg-gradient-to-br from-cyan-400/10 to-purple-400/10 flex items-center justify-center animate-pulse glow-border">
+            <img src="images/Pranav.jpg" alt="Profile" class="w-72 h-72 object-cover rounded-full">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-cyan-400 text-3xl fade-up"
+      style="animation-delay:0.7s;">↓</div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about-bg section-transition section-pad">
+    <div class="container-wide px-2">
+      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
+        About <span class="accent-gradient">Me</span>
+      </h2>
+      <div class="flex flex-col md:flex-row section-gap items-start">
+        <div class="flex-1 about-bg shadow-lg rounded-2xl card-pad fade-up" style="animation-delay:0.2s;">
+          <h3 class="text-2xl font-bold mb-2 font-poppins">Passionate Tech <span class="text-cyan-400">Learner</span>
+          </h3>
+          <p class="font-inter mb-2">
+            I’m Pranav, a passionate learner in technology and design. I’m pursuing my B.Tech in Computer Science and
+            Design at MIT Chhatrapati Sambhaji Nagar. I’ve mastered HTML, CSS, JavaScript (frontend fundamentals),
+            Tailwind CSS, and Python, including the Flask framework and several Python libraries. Currently, I’m diving
+            into Data Science, and my next goals are Artificial Intelligence (AI), Machine Learning (ML), and Deep
+            Learning.
+          </p>
+        </div>
+        <!-- Timeline -->
+        <div class="flex-1 flex flex-col section-gap fade-up" style="animation-delay:0.3s;">
+          <div
+            class="p-3 rounded-xl border-2 border-cyan-400 about-bg card-bg flex items-center justify-between shadow-md font-inter">
+            <div class="flex items-center gap-2 text-lg">💻 Frontend Development</div>
+            <span class="text-cyan-400 font-semibold text-sm">✓ Completed</span>
+          </div>
+          <div
+            class="p-3 rounded-xl border-2 border-cyan-400 about-bg card-bg flex items-center justify-between shadow-md font-inter">
+            <div class="flex items-center gap-2 text-lg">🐍 Python</div>
+            <span class="text-cyan-400 font-semibold text-sm">✓ Completed</span>
+          </div>
+          <div
+            class="p-3 rounded-xl border-2 border-cyan-400 about-bg card-bg flex items-center justify-between shadow-md font-inter">
+            <div class="flex items-center gap-2 text-lg">⚡ Flask</div>
+            <span class="text-cyan-400 font-semibold text-sm">✓ Completed</span>
+          </div>
+          <div
+            class="p-3 rounded-xl border-2 border-purple-400 about-bg card-bg flex items-center justify-between shadow-md font-inter">
+            <div class="flex items-center gap-2 text-lg">📊 Data Science</div>
+            <span class="text-purple-400 font-semibold text-sm">⏳ In Progress</span>
+          </div>
+          <div
+            class="p-3 rounded-xl border-2 border-gray-400 about-bg card-bg flex items-center justify-between shadow-md font-inter">
+            <div class="flex items-center gap-2 text-lg">🧠 AI/ML</div>
+            <span class="text-gray-400 font-semibold text-sm">⏳ Upcoming</span>
+          </div>
+          <div
+            class="p-3 rounded-xl border-2 border-gray-400 about-bg card-bg flex items-center justify-between shadow-md font-inter">
+            <div class="flex items-center gap-2 text-lg">🧠 Deep Learning</div>
+            <span class="text-gray-400 font-semibold text-sm">⏳ Upcoming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="white-bg section-transition section-pad">
+    <div class="container-wide px-2">
+      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
+        My <span class="accent-gradient">Skills</span>
+      </h2>
+      <p class="text-center text-gray-400 dark:text-gray-300 mb-6 font-inter fade-up" style="animation-delay:0.2s;">
+        A comprehensive overview of my technical expertise and tools I work with
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 section-gap fade-up" style="animation-delay:0.3s;">
+        <!-- Skill Cards -->
+        <div class="card-bg shadow-lg rounded-2xl card-pad section-transition font-inter hover:glow-hover">
+          <h3 class="font-bold text-xl mb-2 flex items-center gap-2 font-poppins"><span>💻</span> Frontend Development
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">HTML</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="card-bg shadow-lg rounded-2xl card-pad section-transition font-inter hover:glow-hover">
+          <h3 class="font-bold text-xl mb-2 flex items-center gap-2 font-poppins"><span>⚡</span> Backend & Frameworks
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Python</span>
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Flask Framework</span>
+          </div>
+        </div>
+        <div class="card-bg shadow-lg rounded-2xl card-pad section-transition font-inter hover:glow-hover">
+          <h3 class="font-bold text-xl mb-2 flex items-center gap-2 font-poppins"><span>📊</span> Data Science</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">NumPy</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Pandas</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Matplotlib</span>
+          </div>
+        </div>
+        <div class="card-bg shadow-lg rounded-2xl card-pad section-transition font-inter hover:glow-hover">
+          <h3 class="font-bold text-xl mb-2 flex items-center gap-2 font-poppins"><span>🧠</span> AI & ML (Learning)
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Machine Learning</span>
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Deep Learning</span>
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">AI Algorithms</span>
+          </div>
+        </div>
+        <div class="card-bg shadow-lg rounded-2xl card-pad section-transition font-inter hover:glow-hover">
+          <h3 class="font-bold text-xl mb-2 flex items-center gap-2 font-poppins"><span>🎨</span> Design</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">UI/UX Design</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Responsive Design</span>
+            <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Component Design</span>
+          </div>
+        </div>
+        <div class="card-bg shadow-lg rounded-2xl card-pad section-transition font-inter hover:glow-hover">
+          <h3 class="font-bold text-xl mb-2 flex items-center gap-2 font-poppins"><span>🔗</span> Version Control</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">GitHub</span>
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Git</span>
+            <span class="px-3 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Project Deployment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section: 3x2 grid, scrollable if more than 6 certificates -->
+  <section id="certificates" class="white-bg section-transition section-pad">
+    <div class="container-wide px-2">
+      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
+        My <span class="accent-gradient">Certificates</span>
+      </h2>
+      <div class="overflow-y-auto" style="max-height: 800px;">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Certificate Card 1 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> HP LIFE – Data Science & Analytics
+            </div>
+            <div class="text-md">HP Foundation</div>
+            <div class="text-sm text-gray-400">October 7, 2025</div>
+            <div class="text-xs text-gray-400">ID: a5b8c11c-e75b-4626</div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="certificate_jpg/data science by hp.png" alt="Certificate"
+                class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="flex gap-2 mt-2">
+              <a href="/certificate_pdf/data_hp.pdf" target="_blank"
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                View
+              </a>
+              <a href="/certificate_pdf/data_hp.pdf" download
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                Download
+              </a>
+            </div>
+
+          </div>
+          <!-- Certificate Card 2 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> MIT Shark Tank
+            </div>
+            <div class="text-md">MIT Chh. Sambhaji nagar</div>
+            <div class="text-sm text-gray-400">March 23, 2025</div>
+            <div class="text-xs text-gray-400">ID: none</div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="certificate_jpg//shark Tank.png" alt="Certificate"
+                class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="flex gap-2 mt-2">
+              <a href="/certificate_pdf/shark.pdf" target="_blank"
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                View
+              </a>
+              <a href="/certificate_pdf/shark.pdf" download
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                Download
+              </a>
+            </div>
+
+          </div>
+          <!-- Certificate Card 3 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> Mit Ai Hacketon
+            </div>
+            <div class="text-md">MIT Chh. Sambhaji nagar</div>
+            <div class="text-sm text-gray-400">March 24, 2025</div>
+            <div class="text-xs text-gray-400">ID: none</div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="certificate_jpg/ai hacketon.png" alt="Certificate"
+                class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="flex gap-2 mt-2">
+              <a href="/certificate_pdf/ai_hacketon.pdf" target="_blank"
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                View
+              </a>
+              <a href="/certificate_pdf/ai_hacketon.pdf" download
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                Download
+              </a>
+            </div>
+
+          </div>
+          <!-- Certificate Card 4 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> Code With Harry – Data Science
+            </div>
+            <div class="text-md">Code With Harry</div>
+            <div class="text-sm text-gray-400">September 7, 2025</div>
+            <div class="text-xs text-gray-400">ID: CWH-THE-ULTIMATE-JOB-READY-DATA-SCIENCE-COURSE-NJ9PWDIU</div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="certificate_jpg/data_science.png" alt="Certificate"
+                class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="flex gap-2 mt-2">
+              <a href="/certificate_pdf/data_science.pdf" target="_blank"
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                View
+              </a>
+              <a href="/certificate_pdf/data_science.pdf" download
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                Download
+              </a>
+            </div>
+
+          </div>
+          <!-- Certificate Card 5 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> HP LIFE – Data Science & Analytics
+            </div>
+            <div class="text-md">HP Foundation</div>
+            <div class="text-sm text-gray-400">October 7, 2025</div>
+            <div class="text-xs text-gray-400">ID: a5b8c11c-e75b-4626</div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="certificate_jpg/data science by hp.png" alt="Certificate"
+                class="w-full h-full object-cover rounded-lg">
+            </div>
+            <div class="flex gap-2 mt-2">
+              <a href="/certificate_pdf/data_hp.pdf" target="_blank"
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                View
+              </a>
+              <a href="/certificate_pdf/data_hp.pdf" download
+                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+                Download
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <!-- <div
+            class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover justify-center items-center">
+            <span class="text-cyan-400 font-semibold text-lg">Add More</span>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
+              <video src="images/certificate2.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
+            </div>
+          </div> -->
+
+          <!-- Add more certificate cards as needed, they will scroll after 6 visible -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section: 3x2 grid, scrollable if more than 6 projects -->
+  <section id="projects" class="white-bg section-transition section-pad">
+    <div class="container-wide px-2">
+      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
+        My <span class="accent-gradient">Projects</span>
+      </h2>
+      <!-- wrapper with vertical scroll if >2 rows -->
+      <div class="overflow-y-auto" style="max-height: 600px;">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <!-- Project Card 1 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>⚡</span> Flask Web App</div>
+            <div class="text-md">Blue Carbon Mrv System</div>
+            <div class="w-full h-42 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
+              <video src="/video/Blue_carbon_mrv.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Python</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Flask</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">HTML</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
+            </div>
+            
+            <a href="#"
+              class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
+              on GitHub</a>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>⚡</span> Lunabot</div>
+            <div class="text-md">Space Technology Lunabot </div>
+                   <div class="w-full h-42 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
+              <video src="/video/lunabot.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Python</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Flask</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">HTML</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
+            </div>
+     
+            <a href="#"
+              class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
+              on GitHub</a>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🌐</span> Portfolio v1</div>
+            <div class="text-md">Personal website using HTML, CSS, and Tailwind CSS</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">HTML</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Tailwind CSS</span>
+            </div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="images/project3.jpg" alt="Project 3" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <a href="#"
+              class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
+              on GitHub</a>
+          </div>
+          <!-- Project Card 4 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🔎</span> ML Model Trainer</div>
+            <div class="text-md">ML workflow with Pandas, Scikit-learn</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Python</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Scikit-learn</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Pandas</span>
+            </div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <video src="images/project4.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
+            </div>
+            <a href="#"
+              class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
+              on GitHub</a>
+          </div>
+          <!-- Project Card 5 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>📱</span> Mobile Portfolio</div>
+            <div class="text-md">Mobile-first React/Tailwind portfolio</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">React</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Tailwind</span>
+            </div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="images/project5.jpg" alt="Project 5" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <a href="#"
+              class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
+              on GitHub</a>
+          </div>
+          <!-- Project Card 6 -->
+          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+            <div class="flex items-center gap-2 text-lg font-bold"><span>🚀</span> AI Chatbot</div>
+            <div class="text-md">Conversational AI with Python</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Python</span>
+              <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">NLP</span>
+            </div>
+            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+              <img src="images/project6.jpg" alt="Project 6" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <a href="#"
+              class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
+              on GitHub</a>
+          </div>
+          <!-- Add more project cards as needed, they will scroll after 6 visible -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Roadmap Section -->
+  <section id="roadmap" class="white-bg section-transition section-pad">
+    <div class="container-wide px-2">
+      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
+        Learning <span class="accent-gradient">Roadmap</span>
+      </h2>
+      <div class="w-full mx-auto flex flex-col section-gap fade-up" style="animation-delay:0.2s;">
+        <!-- Roadmap cards as before... -->
+        <div
+          class="p-3 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between card-bg section-transition font-inter">
+          <div class="flex items-center gap-2 text-lg font-semibold">💻 Frontend</div>
+          <span class="font-semibold text-cyan-400 text-sm">✅</span>
+          <div class="flex gap-1">
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">HTML</span>
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Tailwind CSS</span>
+          </div>
+        </div>
+        <div
+          class="p-3 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between card-bg section-transition font-inter">
+          <div class="flex items-center gap-2 text-lg font-semibold">🐍 Python & Flask</div>
+          <span class="font-semibold text-cyan-400 text-sm">✅</span>
+          <div class="flex gap-1">
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Python</span>
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Flask</span>
+          </div>
+        </div>
+        <div
+          class="p-3 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between card-bg section-transition font-inter">
+          <div class="flex items-center gap-2 text-lg font-semibold">📊 Data Science</div>
+          <span class="font-semibold text-purple-400 text-sm">🔄</span>
+          <div class="flex gap-1">
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">NumPy</span>
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Pandas</span>
+            <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Matplotlib</span>
+          </div>
+        </div>
+        <div
+          class="p-3 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between card-bg section-transition font-inter">
+          <div class="flex items-center gap-2 text-lg font-semibold">🧠 Machine Learning</div>
+          <span class="font-semibold text-gray-400 text-sm">⏳</span>
+          <div class="flex gap-1">
+            <span class="px-2 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Scikit-learn</span>
+          </div>
+        </div>
+        <div
+          class="p-3 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between card-bg section-transition font-inter">
+          <div class="flex items-center gap-2 text-lg font-semibold">🧠 Artificial Intelligence</div>
+          <span class="font-semibold text-gray-400 text-sm">⏳</span>
+          <div class="flex gap-1">
+            <span class="px-2 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">AI Algorithms</span>
+          </div>
+        </div>
+        <div
+          class="p-3 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between card-bg section-transition font-inter">
+          <div class="flex items-center gap-2 text-lg font-semibold">🧠 Deep Learning</div>
+          <span class="font-semibold text-gray-400 text-sm">⏳</span>
+          <div class="flex gap-1">
+            <span class="px-2 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">TensorFlow</span>
+            <span class="px-2 py-1 rounded bg-purple-400 text-[#111b32] font-semibold">Keras</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Overview Section -->
+  <section id="overview" class="white-bg section-transition section-pad">
+    <div class="container-wide px-2">
+      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
+        Professional <span class="accent-gradient">Overview</span>
+      </h2>
+      <div
+        class="rounded-2xl shadow-lg card-pad card-bg flex flex-col items-center gap-2 section-transition font-inter fade-up"
+        style="animation-delay:0.2s;">
+        <div class="font-bold text-2xl font-poppins">Pranav Samadhan Khaire</div>
+        <div class="flex gap-6 justify-center py-2">
+          <div class="flex flex-col items-center gap-1">
+            <span class="text-cyan-400 text-2xl">🎓</span>
+            <span class="font-semibold">Computer Science and Design</span>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <span class="text-purple-400 text-2xl">🏛️</span>
+            <span class="font-semibold">MIT, Chhatrapati Sambhaji Nagar</span>
+          </div>
+          <div class="flex flex-col items-center gap-1">
+            <span class="text-cyan-400 text-2xl">🧑‍🎓</span>
+            <span class="font-semibold">Second Year</span>
+          </div>
+        </div>
+        <div class="mt-2 flex flex-wrap gap-2 justify-center">
+          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Data Science</span>
+          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Artificial Intelligence</span>
+          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Machine Learning</span>
+          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Deep Learning</span>
+          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Web Development</span>
+          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Full Stack Development</span>
+        </div>
+        <a href="#certificates"
+          class="mt-4 px-6 py-2 bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-500 transition font-inter">View
+          Certificates</a>
+      </div>
+      <div class="mt-8 flex justify-center gap-8 fade-up" style="animation-delay:0.3s;">
+        <div class="flex flex-col items-center">
+          <span class="text-2xl font-bold text-cyan-400">10+</span>
+          <span class="font-semibold">Skills Mastered</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-2xl font-bold text-purple-400">5+</span>
+          <span class="font-semibold">Projects Completed</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="text-2xl font-bold text-cyan-400">3+</span>
+          <span class="font-semibold">Certifications</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="white-bg section-transition section-pad" style="min-height:500px;">
+    <div class="container-wide px-2 text-center">
+      <h2 class="text-4xl font-bold mb-8 font-poppins fade-up" style="animation-delay:0.1s;">
+        Get <span class="accent-gradient">In Touch</span>
+      </h2>
+      <div class="flex flex-col md:flex-row section-gap justify-center items-center fade-up"
+        style="animation-delay:0.2s; min-height:400px;">
+        <form
+          class="flex flex-col gap-4 items-center w-full max-w-md card-bg p-8 rounded-2xl shadow-lg section-transition font-inter">
+          <input type="text" placeholder="Your Name"
+            class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+          <input type="email" placeholder="Your Email"
+            class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+          <textarea placeholder="Your Message"
+            class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+          <button type="submit"
+            class="px-6 py-2 bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-500 transition font-inter">Send
+            Message</button>
+        </form>
+        <div class="flex flex-col gap-6 items-center w-full">
+          <div>
+            <a href="mailto:pranavkhaire@example.com"
+              class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">📧
+              pranavkhaire@example.com</a>
+            <a href="https://github.com/pranav-khaire" target="_blank" rel="noopener noreferrer"
+              class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">🔗 /pranav-khaire</a>
+            <a href="https://linkedin.com/in/pranavkhaire" target="_blank" rel="noopener noreferrer"
+              class="flex items-center gap-2 text-lg hover:text-purple-400 transition font-inter">💼 /pranavkhaire</a>
+          </div>
+          <div class="flex gap-2 mt-4 justify-center">
+            <a href="https://github.com/pranav-khaire" target="_blank" rel="noopener noreferrer" class="social-icon"
+              title="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
+                style="width:22px;height:22px;vertical-align:middle;"></a>
+            <a href="https://linkedin.com/in/pranavkhaire" target="_blank" rel="noopener noreferrer" class="social-icon"
+              title="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
+                style="width:22px;height:22px;vertical-align:middle;"></a>
+            <a href="mailto:pranavkhaire@example.com" class="social-icon" title="Email"><img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
+                style="width:22px;height:22px;vertical-align:middle;"></a>
+            <a href="https://twitter.com/pranavkhai" target="_blank" rel="noopener noreferrer" class="social-icon"
+              title="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" alt="Twitter"
+                style="width:22px;height:22px;vertical-align:middle;"></a>
+            <a href="https://instagram.com/pranavkhai" target="_blank" rel="noopener noreferrer" class="social-icon"
+              title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg"
+                alt="Instagram" style="width:22px;height:22px;vertical-align:middle;"></a>
+          </div>
+          <div class="mt-4 text-sm text-gray-400">
+            I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.<br>
+            <span class="font-semibold">Currently seeking internship opportunities in Data Science, AI, and ML.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bg py-10 text-center section-transition">
+    <div class="container-wide px-2">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0 font-poppins text-lg font-bold">Pranav.dev</div>
+        <div class="mb-4 md:mb-0 font-inter flex flex-wrap gap-5 items-center">
+          <a href="#home" class="hover:text-cyan-400">Home</a>
+          <a href="#about" class="hover:text-cyan-400">About</a>
+          <a href="#skills" class="hover:text-cyan-400">Skills</a>
+          <a href="#projects" class="hover:text-cyan-400">Projects</a>
+          <a href="#certificates" class="hover:text-cyan-400">Certificates</a>
+          <a href="#contact" class="hover:text-cyan-400">Contact</a>
+        </div>
+        <div class="flex gap-2 justify-center">
+          <a href="https://github.com/pranav-khaire" target="_blank" class="social-icon" title="GitHub"><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
+              style="width:18px;height:18px;vertical-align:middle;"></a>
+          <a href="https://linkedin.com/in/pranavkhaire" target="_blank" class="social-icon" title="LinkedIn"><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
+              style="width:18px;height:18px;vertical-align:middle;"></a>
+          <a href="mailto:pranavkhaire@example.com" class="social-icon" title="Email"><img
+              src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
+              style="width:18px;height:18px;vertical-align:middle;"></a>
+        </div>
+      </div>
+      <div class="mt-6 text-sm opacity-80 font-inter">
+        &copy; 2025 Pranav Samadhan Khaire. Built with <span class="text-cyan-400">Tailwind CSS</span>. All rights
+        reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="scrript.js"></script>
+</body>
+
+</html>
