@@ -27,20 +27,24 @@ window.addEventListener('resize', () => {
 // Theme toggle
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
+
 function setTheme(theme) {
   document.body.setAttribute('data-theme', theme);
   document.body.className = theme === 'dark' ? 'dark' : '';
   themeIcon.innerText = theme === 'dark' ? '🌙' : '☀️';
   localStorage.setItem('theme', theme);
 }
+
 themeToggle.addEventListener('click', () => {
   let current = document.body.getAttribute('data-theme');
   let next = current === 'dark' ? 'light' : 'dark';
   setTheme(next);
 });
+
+// Initialize theme (default = light)
 (function initializeTheme() {
   let saved = localStorage.getItem('theme');
-  setTheme(saved || 'dark');
+  setTheme(saved || 'light');
 })();
 
 // Floating particles animation (Home section)

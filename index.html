@@ -71,21 +71,76 @@
         </p>
         <div class="flex gap-4 fade-up" style="animation-delay:0.5s;">
           <a href="#projects"
-            class="px-6 py-2 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 hover:shadow-cyan-400/50 hover:scale-105 glow-hover font-inter transition">View
-            My Projects</a>
-          <a href="#certificates"
-            class="px-6 py-2 rounded-lg font-semibold shadow-lg bg-white text-[#111b32] hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">View
-            Certificates</a>
+            class="px-6 py-2 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 hover:shadow-cyan-400/50 hover:scale-105 glow-hover font-inter transition">
+            View My Projects
+          </a>
+
+          <a href="/certificate_pdf/Pranav Resume.pdf"
+            class="px-6 py-2 rounded-lg font-semibold shadow-lg bg-white text-[#111b32] hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">
+            View Certificates
+          </a>
+
+          <a href="assets/Pranav_Resume.pdf" download
+            class="px-6 py-2 rounded-lg font-semibold shadow-lg text-white bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">
+            Download My Resume
+          </a>
         </div>
+
       </div>
-      <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative fade-up" style="animation-delay:0.6s;">
-        <div class="relative group">
-          <div
-            class="w-76 h-76 rounded-full border-4 border-cyan-400 shadow-2xl bg-gradient-to-br from-cyan-400/10 to-purple-400/10 flex items-center justify-center animate-pulse glow-border">
-            <img src="images/Pranav.jpg" alt="Profile" class="w-72 h-72 object-cover rounded-full">
-          </div>
-        </div>
+     <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
+ <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
+  <div class="relative group fade-up" style="animation-delay:0.6s;">
+  <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
+  <div class="relative group fade-up" style="animation-delay:0.6s;">
+    <!-- Animated glowing border circle -->
+    <div
+      class="w-72 h-72 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-500 p-1 animate-pulse shadow-[0_0_40px_#00ffff80]">
+      <div
+        class="w-full h-full rounded-full bg-[#111b32] flex items-center justify-center shadow-inner-glow transform transition-all duration-700 ease-out animate-fade-up">
+        <!-- Profile Image -->
+        <img src="images/Pranav.webp" alt="Profile"
+          class="w-76 h-76 object-cover rounded-full border-4 border-cyan-400 shadow-xl transition-transform duration-500 hover:scale-105">
       </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Pulse glow animation for circle */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 30px 0 rgba(0, 255, 255, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 50px 10px rgba(0, 255, 255, 0.9);
+  }
+}
+.animate-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Inner glow */
+.shadow-inner-glow {
+  box-shadow: inset 0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+/* Image fade-up animation */
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fade-up 1s ease-out forwards;
+}
+</style>
+
+
 
 
     </div>
@@ -222,131 +277,157 @@
       </h2>
       <div class="overflow-y-auto" style="max-height: 800px;">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- Certificate Card 1 -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> HP LIFE – Data Science & Analytics
-            </div>
-            <div class="text-md">HP Foundation</div>
-            <div class="text-sm text-gray-400">October 7, 2025</div>
-            <div class="text-xs text-gray-400">ID: a5b8c11c-e75b-4626</div>
-            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
-              <img src="certificate_jpg/data science by hp.png" alt="Certificate"
-                class="w-full h-full object-cover rounded-lg">
-            </div>
-            <div class="flex gap-2 mt-2">
-              <a href="/certificate_pdf/data_hp.pdf" target="_blank"
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                View
-              </a>
-              <a href="/certificate_pdf/data_hp.pdf" download
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                Download
-              </a>
-            </div>
+         <!-- Certificate Card interview -->
+<div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+  <div class="flex items-center gap-2 text-lg font-bold text-black">
+    <span>🏅</span> Unstop – Interview Toolkit
+  </div>
+  <div class="text-md text-black">Unstop</div>
+  <div class="text-sm text-black">October 25, 2025</div>
+  <div class="text-xs text-black">ID: 0fa1ef1a-2072-4b19-a1ae-3d3e0002d48f</div>
 
-          </div>
-          <!-- Certificate Card 2 -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> MIT Shark Tank
-            </div>
-            <div class="text-md">MIT Chh. Sambhaji nagar</div>
-            <div class="text-sm text-gray-400">March 23, 2025</div>
-            <div class="text-xs text-gray-400">ID: none</div>
-            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
-              <img src="certificate_jpg//shark Tank.png" alt="Certificate"
-                class="w-full h-full object-cover rounded-lg">
-            </div>
-            <div class="flex gap-2 mt-2">
-              <a href="/certificate_pdf/shark.pdf" target="_blank"
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                View
-              </a>
-              <a href="/certificate_pdf/shark.pdf" download
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                Download
-              </a>
-            </div>
+  <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+    <img src="/certificate_jpg/interview.jpg" alt="Interview Toolkit Certificate"
+      class="w-full h-full object-cover rounded-lg">
+  </div>
 
-          </div>
-          <!-- Certificate Card 3 -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> Mit Ai Hacketon
-            </div>
-            <div class="text-md">MIT Chh. Sambhaji nagar</div>
-            <div class="text-sm text-gray-400">March 24, 2025</div>
-            <div class="text-xs text-gray-400">ID: none</div>
-            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
-              <img src="certificate_jpg/ai hacketon.png" alt="Certificate"
-                class="w-full h-full object-cover rounded-lg">
-            </div>
-            <div class="flex gap-2 mt-2">
-              <a href="/certificate_pdf/ai_hacketon.pdf" target="_blank"
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                View
-              </a>
-              <a href="/certificate_pdf/ai_hacketon.pdf" download
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                Download
-              </a>
-            </div>
+  <p class="text-sm text-black leading-relaxed">
+    This certificate provided by Unstop is proof of the sheer grit, hard work, and dedication of the
+    participant through which they have completed the <strong>Interview Toolkit</strong> course. Unstop congratulates
+    them on achieving yet another milestone.
+  </p>
 
-          </div>
-          <!-- Certificate Card 4 -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> Code With Harry – Data Science
-            </div>
-            <div class="text-md">Code With Harry</div>
-            <div class="text-sm text-gray-400">September 7, 2025</div>
-            <div class="text-xs text-gray-400">ID: CWH-THE-ULTIMATE-JOB-READY-DATA-SCIENCE-COURSE-NJ9PWDIU</div>
-            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
-              <img src="certificate_jpg/data_science.png" alt="Certificate"
-                class="w-full h-full object-cover rounded-lg">
-            </div>
-            <div class="flex gap-2 mt-2">
-              <a href="/certificate_pdf/data_science.pdf" target="_blank"
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                View
-              </a>
-              <a href="/certificate_pdf/data_science.pdf" download
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                Download
-              </a>
-            </div>
+  <div class="flex gap-2 mt-2">
+    <a href="/certificate_pdf/interview.pdf" target="_blank"
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      View
+    </a>
+    <a href="/certificate_pdf/interview.pdf" download
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      Download
+    </a>
+  </div>
+</div>
 
-          </div>
-          <!-- Certificate Card 5 -->
-          <!-- <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🏅</span> HP LIFE – Data Science & Analytics
-            </div>
-            <div class="text-md">HP Foundation</div>
-            <div class="text-sm text-gray-400">October 7, 2025</div>
-            <div class="text-xs text-gray-400">ID: a5b8c11c-e75b-4626</div>
-            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
-              <img src="certificate_jpg/data science by hp.png" alt="Certificate"
-                class="w-full h-full object-cover rounded-lg">
-            </div>
-            <div class="flex gap-2 mt-2">
-              <a href="/certificate_pdf/data_hp.pdf" target="_blank"
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                View
-              </a>
-              <a href="/certificate_pdf/data_hp.pdf" download
-                class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
-                Download
-              </a>
-            </div>
+<!-- Certificate Card 1 -->
+<div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+  <div class="flex items-center gap-2 text-lg font-bold text-black"><span>🏅</span> HP LIFE – Data Science & Analytics
+  </div>
+  <div class="text-md text-black">HP Foundation</div>
+  <div class="text-sm text-black">October 7, 2025</div>
+  <div class="text-xs text-black">ID: a5b8c11c-e75b-4626</div>
 
-          </div> -->
+  <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+    <img src="certificate_jpg/data science by hp.png" alt="Certificate" class="w-full h-full object-cover rounded-lg">
+  </div>
 
-          <!-- Certificate Card 2 -->
-          <!-- <div
-            class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover justify-center items-center">
-            <span class="text-cyan-400 font-semibold text-lg">Add More</span>
-            <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
-              <video src="images/certificate2.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
-            </div>
-          </div> -->
+  <p class="text-sm text-black leading-relaxed">
+    This certificate from <strong>HP LIFE</strong> provided by the HP Foundation validates the learner’s skills in
+    <strong>Data Science & Analytics</strong>. It recognizes their successful completion of the program,
+    showcasing analytical thinking, data interpretation, and technical proficiency.
+  </p>
 
+  <div class="flex gap-2 mt-2">
+    <a href="/certificate_pdf/data_hp.pdf" target="_blank"
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      View
+    </a>
+    <a href="/certificate_pdf/data_hp.pdf" download
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      Download
+    </a>
+  </div>
+</div>
+
+<!-- Certificate Card 2 -->
+<div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+  <div class="flex items-center gap-2 text-lg font-bold text-black"><span>🏅</span> MIT Shark Tank</div>
+  <div class="text-md text-black">MIT Chh. Sambhaji Nagar</div>
+  <div class="text-sm text-black">March 23, 2025</div>
+  <div class="text-xs text-black">ID: none</div>
+
+  <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+    <img src="certificate_jpg/shark Tank.png" alt="Certificate" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <p class="text-sm text-black leading-relaxed">
+    This certificate was awarded for participation in the <strong>MIT Shark Tank</strong> competition at MIT
+    Chhatrapati Sambhaji Nagar. It highlights creativity, innovation, and entrepreneurial problem-solving through
+    pitching original project ideas to judges and industry experts.
+  </p>
+
+  <div class="flex gap-2 mt-2">
+    <a href="/certificate_pdf/shark.pdf" target="_blank"
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      View
+    </a>
+    <a href="/certificate_pdf/shark.pdf" download
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      Download
+    </a>
+  </div>
+</div>
+
+<!-- Certificate Card 3 -->
+<div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+  <div class="flex items-center gap-2 text-lg font-bold text-black"><span>🏅</span> MIT AI Hackathon</div>
+  <div class="text-md text-black">MIT Chh. Sambhaji Nagar</div>
+  <div class="text-sm text-black">March 24, 2025</div>
+  <div class="text-xs text-black">ID: none</div>
+
+  <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+    <img src="certificate_jpg/ai hacketon.png" alt="Certificate" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <p class="text-sm text-black leading-relaxed">
+    Awarded for exceptional participation in the <strong>MIT AI Hackathon</strong>, this certificate acknowledges
+    skills in artificial intelligence, teamwork, and innovation. The event encouraged students to build AI-powered
+    solutions addressing real-world challenges.
+  </p>
+
+  <div class="flex gap-2 mt-2">
+    <a href="/certificate_pdf/ai_hacketon.pdf" target="_blank"
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      View
+    </a>
+    <a href="/certificate_pdf/ai_hacketon.pdf" download
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      Download
+    </a>
+  </div>
+</div>
+
+<!-- Certificate Card 4 -->
+<div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
+  <div class="flex items-center gap-2 text-lg font-bold text-black"><span>🏅</span> Code With Harry – Data Science</div>
+  <div class="text-md text-black">Code With Harry</div>
+  <div class="text-sm text-black">September 7, 2025</div>
+  <div class="text-xs text-black">ID: CWH-THE-ULTIMATE-JOB-READY-DATA-SCIENCE-COURSE-NJ9PWDIU</div>
+
+  <div class="w-full h-32 flex items-center justify-center overflow-hidden rounded-lg my-3">
+    <img src="certificate_jpg/data_science.png" alt="Certificate" class="w-full h-full object-cover rounded-lg">
+  </div>
+
+  <p class="text-sm text-black leading-relaxed">
+    This certificate from <strong>Code With Harry</strong> certifies the completion of the
+    <strong>Ultimate Job-Ready Data Science Course</strong>. It recognizes mastery of essential data science skills,
+    including Python, data visualization, and machine learning fundamentals.
+  </p>
+
+  <div class="flex gap-2 mt-2">
+    <a href="/certificate_pdf/data_science.pdf" target="_blank"
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      View
+    </a>
+    <a href="/certificate_pdf/data_science.pdf" download
+      class="px-3 py-1.5 text-sm font-semibold text-purple-400 border border-purple-400 rounded-md hover:bg-purple-400 hover:text-white transition-all">
+      Download
+    </a>
+  </div>
+</div>
+
+
+    
           <!-- Add more certificate cards as needed, they will scroll after 6 visible -->
         </div>
       </div>
@@ -376,7 +457,7 @@
               <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
               <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
             </div>
-            
+
             <a href="https://github.com/pranav16-king/Blue-Carbon-MRV."
               class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
               on GitHub</a>
@@ -385,7 +466,7 @@
           <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
             <div class="flex items-center gap-2 text-lg font-bold"><span>⚡</span> Lunabot</div>
             <div class="text-md">Space Technology Lunabot </div>
-                   <div class="w-full h-42 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
+            <div class="w-full h-42 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
               <video src="/video/lunabot.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
             </div>
             <div class="flex flex-wrap gap-2">
@@ -395,7 +476,7 @@
               <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">CSS</span>
               <span class="px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">JavaScript</span>
             </div>
-     
+
             <a href="https://github.com/pranav16-king/practice"
               class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
               on GitHub</a>
@@ -417,7 +498,7 @@
               class="px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all">View
               on GitHub</a>
           </div>
-         
+
           <!-- Project Card 4 -->
           <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
             <div class="flex items-center gap-2 text-lg font-bold"><span>🏥</span>Hospital Dashboard</div>
@@ -600,15 +681,17 @@
               pranavkhaire@example.com</a>
             <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer"
               class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">🔗 /pranav-khaire</a>
-            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUhRlxBPNT6aoHUuR3Y8Rag%3D%3D" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUhRlxBPNT6aoHUuR3Y8Rag%3D%3D"
+              target="_blank" rel="noopener noreferrer"
               class="flex items-center gap-2 text-lg hover:text-purple-400 transition font-inter">💼 /pranavkhaire</a>
           </div>
           <div class="flex gap-2 mt-4 justify-center">
             <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer" class="social-icon"
               title="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
                 style="width:22px;height:22px;vertical-align:middle;"></a>
-            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUhRlxBPNT6aoHUuR3Y8Rag%3D%3D" target="_blank" rel="noopener noreferrer" class="social-icon"
-              title="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
+            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUhRlxBPNT6aoHUuR3Y8Rag%3D%3D"
+              target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn"><img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
                 style="width:22px;height:22px;vertical-align:middle;"></a>
             <a href="mailto:pranavkhaire53@example.com" class="social-icon" title="Email"><img
                 src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
@@ -616,9 +699,10 @@
             <a href="https://twitter.com/PranavKhaire16" target="_blank" rel="noopener noreferrer" class="social-icon"
               title="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" alt="Twitter"
                 style="width:22px;height:22px;vertical-align:middle;"></a>
-            <a href="https://www.instagram.com/pranav_khaire___/" target="_blank" rel="noopener noreferrer" class="social-icon"
-              title="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg"
-                alt="Instagram" style="width:22px;height:22px;vertical-align:middle;"></a>
+            <a href="https://www.instagram.com/pranav_khaire___/" target="_blank" rel="noopener noreferrer"
+              class="social-icon" title="Instagram"><img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" alt="Instagram"
+                style="width:22px;height:22px;vertical-align:middle;"></a>
           </div>
           <div class="mt-4 text-sm text-gray-400">
             I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.<br>
@@ -629,68 +713,73 @@
     </div>
   </section>
 
- <footer class="footer-bg py-12 text-center md:text-left section-transition border-t border-gray-700">
-  <div class="container-wide px-4 md:px-8">
-    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
+  <footer class="footer-bg py-12 text-center md:text-left section-transition border-t border-gray-700">
+    <div class="container-wide px-4 md:px-8">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
 
-      <!-- Brand / About Section -->
-      <div class="md:w-1/3">
-        <h2 class="font-poppins text-2xl font-bold text-cyan-400 mb-3">Pranav</h2>
-        <p class="text-sm font-inter text-gray-300 leading-relaxed">
-          Hi! I'm <span class="font-semibold text-white">Pranav Samadhan Khaire</span>, a passionate web developer who loves
-          creating sleek, user-friendly, and high-performance digital experiences. Let’s build something amazing together!
-        </p>
-      </div>
+        <!-- Brand / About Section -->
+        <div class="md:w-1/3">
+          <h2 class="font-poppins text-2xl font-bold text-cyan-400 mb-3">Pranav</h2>
+          <p class="text-sm font-inter text-gray-300 leading-relaxed">
+            Hi! I'm <span class="font-semibold text-white">Pranav Samadhan Khaire</span>, a passionate web developer who
+            loves
+            creating sleek, user-friendly, and high-performance digital experiences. Let’s build something amazing
+            together!
+          </p>
+        </div>
 
-      <!-- Quick Links -->
-      <div class="md:w-1/3">
-        <h3 class="font-poppins text-xl font-semibold mb-3 text-cyan-400">Quick Links</h3>
-        <ul class="font-inter flex flex-col gap-2 text-gray-300">
-          <li><a href="#home" class="hover:text-cyan-400 transition-colors duration-200">Home</a></li>
-          <li><a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About</a></li>
-          <li><a href="#skills" class="hover:text-cyan-400 transition-colors duration-200">Skills</a></li>
-          <li><a href="#projects" class="hover:text-cyan-400 transition-colors duration-200">Projects</a></li>
-          <li><a href="#certificates" class="hover:text-cyan-400 transition-colors duration-200">Certificates</a></li>
-          <li><a href="#contact" class="hover:text-cyan-400 transition-colors duration-200">Contact</a></li>
-        </ul>
-      </div>
+        <!-- Quick Links -->
+        <div class="md:w-1/3">
+          <h3 class="font-poppins text-xl font-semibold mb-3 text-cyan-400">Quick Links</h3>
+          <ul class="font-inter flex flex-col gap-2 text-gray-300">
+            <li><a href="#home" class="hover:text-cyan-400 transition-colors duration-200">Home</a></li>
+            <li><a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About</a></li>
+            <li><a href="#skills" class="hover:text-cyan-400 transition-colors duration-200">Skills</a></li>
+            <li><a href="#projects" class="hover:text-cyan-400 transition-colors duration-200">Projects</a></li>
+            <li><a href="#certificates" class="hover:text-cyan-400 transition-colors duration-200">Certificates</a></li>
+            <li><a href="#contact" class="hover:text-cyan-400 transition-colors duration-200">Contact</a></li>
+          </ul>
+        </div>
 
-      <!-- Socials -->
-      <div class="md:w-1/3">
-        <h3 class="font-poppins text-xl font-semibold mb-3 text-cyan-400">Connect with Me</h3>
-        <div class="flex justify-center md:justify-start gap-4 flex-wrap mt-2">
-          <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer" title="GitHub">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
-              class="w-6 h-6 hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://www.linkedin.com/in/pranav-khaire-732793338/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
-              class="w-6 h-6 hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="mailto:pranavkhaire53@example.com" title="Email">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
-              class="w-6 h-6 hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://twitter.com/PranavKhaire16" target="_blank" rel="noopener noreferrer" title="Twitter">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" alt="Twitter"
-              class="w-6 h-6 hover:scale-110 transition-transform duration-200">
-          </a>
-          <a href="https://www.instagram.com/pranav_khaire___/" target="_blank" rel="noopener noreferrer" title="Instagram">
-            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" alt="Instagram"
-              class="w-6 h-6 hover:scale-110 transition-transform duration-200">
-          </a>
+        <!-- Socials -->
+        <div class="md:w-1/3">
+          <h3 class="font-poppins text-xl font-semibold mb-3 text-cyan-400">Connect with Me</h3>
+          <div class="flex justify-center md:justify-start gap-4 flex-wrap mt-2">
+            <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer" title="GitHub">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
+                class="w-6 h-6 hover:scale-110 transition-transform duration-200">
+            </a>
+            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/" target="_blank" rel="noopener noreferrer"
+              title="LinkedIn">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
+                class="w-6 h-6 hover:scale-110 transition-transform duration-200">
+            </a>
+            <a href="mailto:pranavkhaire53@example.com" title="Email">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
+                class="w-6 h-6 hover:scale-110 transition-transform duration-200">
+            </a>
+            <a href="https://twitter.com/PranavKhaire16" target="_blank" rel="noopener noreferrer" title="Twitter">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" alt="Twitter"
+                class="w-6 h-6 hover:scale-110 transition-transform duration-200">
+            </a>
+            <a href="https://www.instagram.com/pranav_khaire___/" target="_blank" rel="noopener noreferrer"
+              title="Instagram">
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" alt="Instagram"
+                class="w-6 h-6 hover:scale-110 transition-transform duration-200">
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Divider -->
-    <div class="border-t border-gray-700 mt-10 pt-6 text-center font-inter text-sm text-gray-400">
-      &copy; 2025 <span class="text-white font-semibold">Pranav Samadhan Khaire</span>. All rights reserved. 
-      <br>
-      <span class="text-cyan-400 hover:underline cursor-pointer">Built with ❤️ using HTML, Tailwind CSS, and JavaScript.</span>
+      <!-- Divider -->
+      <div class="border-t border-gray-700 mt-10 pt-6 text-center font-inter text-sm text-gray-400">
+        &copy; 2025 <span class="text-white font-semibold">Pranav Samadhan Khaire</span>. All rights reserved.
+        <br>
+        <span class="text-cyan-400 hover:underline cursor-pointer">Built with ❤️ using HTML, Tailwind CSS, and
+          JavaScript.</span>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 
   <script src="scrript.js"></script>
