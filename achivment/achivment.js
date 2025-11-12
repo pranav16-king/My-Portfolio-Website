@@ -47,7 +47,7 @@ function achievementSlider() {
       },
       {
         title: "Smart India Hackathon 2025 – Internal Hackathon 🏅 (Participation)",
-        description: "Certificate of Participation for <strong>Pranav Khaire</strong> and team members in the Internal Hackathon conducted by MIT, Chhatrapati Sambhajinagar.",
+        description: "Participate for <strong>Pranav Khaire</strong> and team members in the Internal Hackathon conducted in MIT, Chhatrapati Sambhajinagar.",
         details: [
           "<strong>Event:</strong> Smart India Hackathon (SIH) 2025 – Internal Hackathon",
           "<strong>Date:</strong> 24th September 2025",

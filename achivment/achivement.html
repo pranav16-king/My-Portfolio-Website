@@ -23,18 +23,17 @@
   <!-- Header -->
   <header class="bg-gradient-to-r from-blue-600 to-purple-600 py-3 shadow-lg sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-4">
-      <h1 class="text-2xl font-bold text-white">Achievements & Projects</h1>
+      <h1 class="text-2xl font-bold text-white">Compition particpation, Achievements & Projects</h1>
       <nav class="space-x-3">
         <a href="/index.html" class="text-white px-3 py-1 rounded hover:bg-white hover:text-gray-900 transition">Home</a>
         <a href="/notes_section/notes.html"
           class="text-white px-3 py-1 rounded hover:bg-white hover:text-gray-900 transition">Coding Notes</a>
       </nav>
     </div>
-    <div class="text-center mt-1 text-white/80 text-sm">Showcasing projects, awards & learning milestones</div>
   </header>
   <!-- Projects & Achievements Section -->
   <section class="py-12 relative" x-data="achievementSlider()" x-init="startAutoSlide()">
-    <h2 class="text-3xl font-bold mb-8 text-indigo-400 text-center">Projects & Achievements</h2>
+    <h2 class="text-3xl font-bold mb-8 text-indigo-400 text-center">Compition particpation, Achievements & Projects</h2>
 
     <template x-for="(achievement, index) in achievements" :key="index">
       <div x-show="current === index" x-transition.opacity.duration.500ms
