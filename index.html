@@ -7,6 +7,7 @@
   <title>Pranav.dev Portfolio</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Fonts: Poppins & Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet">
@@ -23,6 +24,7 @@
       <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
       <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
       <li><a href="#certificates" class="hover:text-cyan-400 transition">Certificates</a></li>
+      <li><a href="/achivment/achivement.html" class="hover:text-cyan-400 transition">Achievements</a></li>
       <li><a href="/notes_section/notes.html" class="hover:text-cyan-400 transition">Coding Notes</a></li>
       <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
       <li>
@@ -45,6 +47,7 @@
       <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
       <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
       <li><a href="#certificates" onclick="closeMobileMenu()">Certificates</a></li>
+      <li><a href="/achivment/achivement.html" onclick="closeMobileMenu()">Achievements</a></li>
       <li><a href="/notes_section/notes.html" >Coding Notes</a></li>
       <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
       <li>
@@ -1392,64 +1395,121 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="white-bg section-transition section-pad" style="min-height:500px;">
-    <div class="container-wide px-2 text-center">
-      <h2 class="text-4xl font-bold mb-8 font-poppins fade-up" style="animation-delay:0.1s;">
-        Get <span class="accent-gradient">In Touch</span>
-      </h2>
-      <div class="flex flex-col md:flex-row section-gap justify-center items-center fade-up"
-        style="animation-delay:0.2s; min-height:400px;">
-        <form
-          class="flex flex-col gap-4 items-center w-full max-w-md card-bg p-8 rounded-2xl shadow-lg section-transition font-inter">
-          <input type="text" placeholder="Your Name"
-            class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
-          <input type="email" placeholder="Your Email"
-            class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
-          <textarea placeholder="Your Message"
-            class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
-          <button type="submit"
-            class="px-6 py-2 bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-500 transition font-inter">Send
-            Message</button>
-        </form>
-        <div class="flex flex-col gap-6 items-center w-full">
-          <div>
-            <a href="mailto:pranavkhaire53@example.com"
-              class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">📧
-              pranavkhaire@example.com</a>
-            <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer"
-              class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">🔗 /pranav-khaire</a>
-            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUhRlxBPNT6aoHUuR3Y8Rag%3D%3D"
-              target="_blank" rel="noopener noreferrer"
-              class="flex items-center gap-2 text-lg hover:text-purple-400 transition font-inter">💼 /pranavkhaire</a>
-          </div>
-          <div class="flex gap-2 mt-4 justify-center">
-            <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer" class="social-icon"
-              title="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
-                style="width:22px;height:22px;vertical-align:middle;"></a>
-            <a href="https://www.linkedin.com/in/pranav-khaire-732793338/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BUhRlxBPNT6aoHUuR3Y8Rag%3D%3D"
-              target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn"><img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
-                style="width:22px;height:22px;vertical-align:middle;"></a>
-            <a href="mailto:pranavkhaire53@example.com" class="social-icon" title="Email"><img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
-                style="width:22px;height:22px;vertical-align:middle;"></a>
-            <a href="https://twitter.com/PranavKhaire16" target="_blank" rel="noopener noreferrer" class="social-icon"
-              title="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" alt="Twitter"
-                style="width:22px;height:22px;vertical-align:middle;"></a>
-            <a href="https://www.instagram.com/pranav_khaire___/" target="_blank" rel="noopener noreferrer"
-              class="social-icon" title="Instagram"><img
-                src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" alt="Instagram"
-                style="width:22px;height:22px;vertical-align:middle;"></a>
-          </div>
-          <div class="mt-4 text-sm text-gray-400">
-            I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.<br>
-            <span class="font-semibold">Currently seeking internship opportunities in Data Science, AI, and ML.</span>
-          </div>
+<!-- Contact Section -->
+<section id="contact" class="white-bg section-transition section-pad" style="min-height:500px;">
+  <div class="container-wide px-2 text-center">
+    <h2 class="text-4xl font-bold mb-8 font-poppins fade-up" style="animation-delay:0.1s;">
+      Get <span class="accent-gradient">In Touch</span>
+    </h2>
+
+    <div class="flex flex-col md:flex-row section-gap justify-center items-center fade-up"
+         style="animation-delay:0.2s; min-height:400px;">
+
+      <!-- Contact Form -->
+      <form id="contactForm"
+            class="flex flex-col gap-4 items-center w-full max-w-md card-bg p-8 rounded-2xl shadow-lg section-transition font-inter">
+        <input type="text" name="name" placeholder="Your Name" required
+               class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+        <input type="email" name="email" placeholder="Your Email" required
+               class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+        <input type="text" name="phone" placeholder="Your Phone (optional)"
+               class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400" />
+        <select name="service" required
+                class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400">
+          <option value="">Select Service</option>
+          <option value="AI">AI</option>
+          <option value="Data Science">Data Science</option>
+          <option value="ML">ML</option>
+          <option value="Full Stack">Full Stack</option>
+        </select>
+        <textarea name="details" placeholder="Your Message" required
+                  class="px-4 py-2 w-full rounded-lg border-2 border-cyan-400 bg-white text-[#111b32] focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
+        <button type="submit"
+                class="px-6 py-2 bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-500 transition font-inter">
+          Send Message
+        </button>
+        <div id="formMsg" class="text-cyan-400 font-bold hidden text-center mt-2">Thank you! Message sent.</div>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col gap-6 items-center w-full mt-8 md:mt-0">
+        <div>
+          <a href="mailto:pranavkhaire53@example.com"
+             class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">📧
+            pranavkhaire@example.com</a>
+          <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer"
+             class="flex items-center gap-2 text-lg hover:text-cyan-400 transition font-inter">🔗 /pranav-khaire</a>
+          <a href="https://www.linkedin.com/in/pranav-khaire-732793338/"
+             target="_blank" rel="noopener noreferrer"
+             class="flex items-center gap-2 text-lg hover:text-purple-400 transition font-inter">💼 /pranavkhaire</a>
+        </div>
+
+        <div class="flex gap-2 mt-4 justify-center">
+          <a href="https://github.com/pranav16-king" target="_blank" rel="noopener noreferrer" class="social-icon"
+             title="GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg" alt="GitHub"
+                                 style="width:22px;height:22px;vertical-align:middle;"></a>
+          <a href="https://www.linkedin.com/in/pranav-khaire-732793338/" target="_blank" rel="noopener noreferrer" class="social-icon"
+             title="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/linkedin.svg" alt="LinkedIn"
+                                   style="width:22px;height:22px;vertical-align:middle;"></a>
+          <a href="mailto:pranavkhaire53@example.com" class="social-icon" title="Email"><img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg" alt="Email"
+                  style="width:22px;height:22px;vertical-align:middle;"></a>
+          <a href="https://twitter.com/PranavKhaire16" target="_blank" rel="noopener noreferrer" class="social-icon"
+             title="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/twitter.svg" alt="Twitter"
+                                  style="width:22px;height:22px;vertical-align:middle;"></a>
+          <a href="https://www.instagram.com/pranav_khaire___/" target="_blank" rel="noopener noreferrer"
+             class="social-icon" title="Instagram"><img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg" alt="Instagram"
+                  style="width:22px;height:22px;vertical-align:middle;"></a>
+        </div>
+
+        <div class="mt-4 text-sm text-gray-400">
+          I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.<br>
+          <span class="font-semibold">Currently seeking internship opportunities in Data Science, AI, ML, and Full Stack.</span>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- EmailJS Script -->
+<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    emailjs.init('buYZsGztatdP8xMkN');
+
+    const form = document.getElementById('contactForm');
+    const formMsg = document.getElementById('formMsg');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = {
+        name: form.elements['name'].value,
+        email: form.elements['email'].value,
+        phone: form.elements['phone'].value || 'N/A',
+        service: form.elements['service'].value,
+        details: form.elements['details'].value,
+        time: new Date().toLocaleString()  // Matches your {{time}} key
+      };
+
+      emailjs.send('service_jgru7x7', 'template_67aesx8', formData)
+        .then(function(response) {
+          console.log('SUCCESS!', response.status, response.text);
+          formMsg.classList.remove('hidden');
+          formMsg.textContent = "Thank you! Your message has been sent.";
+          form.reset();
+          setTimeout(() => formMsg.classList.add('hidden'), 3000);
+        }, function(error) {
+          console.log('FAILED...', error);
+          formMsg.classList.remove('hidden');
+          formMsg.textContent = "Oops! Something went wrong. Please try again.";
+          setTimeout(() => formMsg.classList.add('hidden'), 3000);
+        });
+    });
+  });
+</script> -->
+
 
   <footer class="footer-bg py-12 text-center md:text-left section-transition border-t border-gray-700">
     <div class="container-wide px-4 md:px-8">
