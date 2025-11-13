@@ -22,7 +22,7 @@
         }
       }
 .light-theme {
-  background: linear-gradient(to bottom right, #d1d5db, #9ca3af);
+  background: linear-gradient(to bottom right, white, white);
   color: #0ea5e9; /* vivid sky blue */
 }
 
