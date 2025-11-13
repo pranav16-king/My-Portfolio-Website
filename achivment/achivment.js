@@ -16,9 +16,9 @@ function achievementSlider() {
         images: ["img/project1 (1).jpg", "img/project1 (2).jpg", "img/project1 (3).jpg", "img/project1 (4).jpg"],
         team: [
           { name: "Pranav Khaire", role: "Project Lead(Backend,frontend Devloper)", photo: "member/pranav.webp" },
-          { name: "Varad Deshpande", role: "Presentation", photo: "img/member2.jpg" },
-          { name: "Satydeep kharat", role: "UI/UX Designer", photo: "img/member3.jpg" },
-          { name: "Aniket", role: "Backend Developer", photo: "img/member4.jpg" }
+          { name: "Varad Deshpande", role: "Presentation", photo: "member/male.avif" },
+          { name: "Satydeep kharat", role: "UI/UX Designer", photo: "member/male.avif" },
+          { name: "Aniket", role: "Backend Developer", photo: "member/male.avif" }
 
         ]
       },
@@ -40,8 +40,8 @@ function achievementSlider() {
         images: ["img/hacksphere1.jpg", "img/hacksphere2.jpg", "img/hacksphere3.jpg"],
         team: [
           { name: "Pranav Khaire", role: "Team Leader", photo: "member/pranav.webp" },
-          { name: "Varad Dehpande", role: "Team Member", photo: "img/member2.jpg" },
-          { name: "Om Bute", role: "Team Member", photo: "img/member3.jpg" },
+          { name: "Varad Dehpande", role: "Team Member", photo: "member/male.avif" },
+          { name: "Om Bute", role: "Team Member", photo: "member/male.avif" },
           { name: "Piyush Jayebhaye", role: "Team Member", photo: "member/piyush.jpg" }
         ]
       },
@@ -59,14 +59,14 @@ function achievementSlider() {
         signatories: [
           "Dr. Nilesh Patil"
         ],
-        images: ["sih_internal1.jpg", "sih_internal2.jpg"],
+        images: ["img/sih (2).jpg", "img/sih (1).jpg","img/sih (3).jpg","img/sih (4).jpg"],
         team: [
           { name: "Pranav Khaire", role: "Group Leader (Backend,Frontend Devloper)", photo: "member/pranav.webp" },
           { name: "Piyush Jayebhaye", role: "Team Member", photo: "member/piyush.jpg" },
-          { name: "Jaya Kharate", role: "Team Member", photo: "img/member3.jpg" },
-          { name: "Sakshi Alane", role: "Team Member", photo: "img/member4.jpg" },
-          { name: "Sakshi Bikkad", role: "Team Member", photo: "img/member5.jpg" },
-          { name: "Satydeep Kharat", role: "Team Member", photo: "img/member6.jpg" }
+          { name: "Jaya Kharate", role: "Team Member", photo: "member/female.avif" },
+          { name: "Sakshi Alane", role: "Team Member", photo: "member/female.avif" },
+          { name: "Sakshi Bikkad", role: "Team Member", photo: "member/female.avif" },
+          { name: "Satydeep Kharat", role: "Team Member", photo: "member/male.avif" }
         ]
       }
 
