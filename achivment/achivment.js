@@ -46,6 +46,41 @@ function achievementSlider() {
         ]
       },
       {
+  title: "Sankalpana 2025 – Poster & Project Competition 🏅 (Second Runner-up)",
+  
+  description: "Certificate awarded to <strong>Pranav Samadhan Khaire</strong> for achieving <strong>Second Runner-up</strong> in Sankalpana 2025 – Poster and Project Competition.",
+  
+  details: [
+    "<strong>Institute:</strong> G.S. MANDAL, Maharashtra Institute of Technology (An Autonomous Institute), Chh. Sambhajinagar",
+    "<strong>Department:</strong> Electrical Engineering",
+    "<strong>Event:</strong> MEDITRO WITH GR – Sankalpana 2025",
+    "<strong>Competition:</strong> Ecosafe Poster Competition & Project Competition",
+    "<strong>Achievement:</strong> Secured Second Runner-up position",
+    "<strong>Poster Topic:</strong> Impact of Technology on Environment",
+    "<strong>Participation Rules:</strong> Maximum 3 members per project, 2 members per poster",
+    "<strong>Poster Size:</strong> A2 (submit 1 day before the event)",
+    "<strong>Instructions:</strong> Participants must report at least 1 hour before the event. Any misbehavior will lead to disqualification.",
+    "<strong>Date & Venue:</strong> 15th November 2025 at 10 AM | Electrical Engineering Department"
+  ],
+
+  signatories: [
+    "🖊️ Prof. Roopali Palwe – Event Coordinator (Ecosafe Poster Competition)",
+    "🖊️ Prof. Sonali Sabnis – Event Coordinator (Ecosafe Poster Competition)",
+    "🖊️ Prof. G. D. Karanjgaokar – Event Coordinator (Project Competition)",
+    "🖊️ Dr. S. M. Badve – Head of Department",
+    "🖊️ Dr. N. G. Patil – Director"
+  ],
+
+  images: ["img/sankalpana3.jpg", "img/sankalpana2.jpg", "img/sankalpana1.jpg"],
+
+  team: [
+    { name: "Pranav Khaire", role: "Team Leader ", photo: "member/pranav.webp" },
+    { name: "Varad Dehpande", role: "Team Member", photo: "member/male.avif" },
+    { name: "Aniket Tambde", role: "Team Member", photo: "member/male.avif" }
+  ]
+},
+
+      {
         title: "Smart India Hackathon 2025 – Internal Hackathon 🏅 (Participation)",
         description: "Participate for <strong>Pranav Khaire</strong> and team members in the Internal Hackathon conducted in MIT, Chhatrapati Sambhajinagar.",
         details: [
