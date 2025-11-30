@@ -74,70 +74,88 @@
 </div>
 
   <!-- Hero Section -->
-  <section id="home"
-    class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 dark:bg-gradient-to-br dark:from-[#111b32] dark:to-[#16213e]">
-    <div id="particles-bg"></div>
-    <div class="flex flex-col md:flex-row items-center container-wide px-6 relative z-10">
-      <div class="flex-1">
-        <div class="mb-2 text-cyan-400 font-semibold flex items-center gap-2 font-inter fade-up"
-          style="animation-delay:0.1s;">
-          <span>🤖</span> Welcome to my portfolio
-        </div>
-        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-2 font-poppins fade-up accent-gradient"
-          style="animation-delay:0.2s;">
-          Pranav<br> Samadhan<br> <span class="accent-gradient font-poppins">Khaire</span>
-        </h1>
-        <p class="text-xl text-gray-300 mb-2 font-inter fade-up" style="animation-delay:0.3s;">
-          Aspiring Data Scientist | AI & ML Enthusiast | Full Stack Learner
-        </p>
-        <p class="text-lg text-gray-400 mb-4 font-inter fade-up" style="animation-delay:0.4s;">
-          Second-Year Computer Science and Design student at Maharashtra Institute of Technology, Chhatrapati Sambhaji
-          Nagar.
-        </p>
-        <div class="flex gap-4 fade-up" style="animation-delay:0.5s;">
-          <a href="#projects"
-            class="px-4 py-4 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 hover:shadow-cyan-400/50 hover:scale-105 glow-hover font-inter transition">
-            View My Projects
-          </a>
+ <!-- Hero Section (Dark Version) -->
+<section id="home"
+  class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 
+         bg-[#0d1125] dark:bg-[#0d1125]">
 
-          <a href="#certificates"
-            class="px-4 py-4 rounded-lg font-semibold shadow-lg bg-white text-[#111b32] hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">
-            View Certificates
-          </a>
+  <div id="particles-bg"></div>
 
-          <a href="certificate_pdf/Pranav Resume.pdf" download
-            class="px-4 py-4 rounded-lg font-semibold shadow-lg text-white bg-gradient-to-r from-cyan-400 to-purple-500 hover:from-cyan-500 hover:to-purple-600 hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">
-            Download My Resume
-          </a>
+  <div class="flex flex-col md:flex-row items-center container-wide px-6 relative z-10">
+
+    <!-- Left Content -->
+    <div class="flex-1">
+      <div class="mb-2 text-cyan-400 font-semibold flex items-center gap-2 font-inter fade-up"
+        style="animation-delay:0.1s;">
+        <span>🤖</span> Welcome to my portfolio
+      </div>
+
+      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-2 font-poppins fade-up accent-gradient"
+        style="animation-delay:0.2s;">
+        Pranav<br> Samadhan<br>
+        <span class="accent-gradient font-poppins">Khaire</span>
+      </h1>
+
+      <p class="text-xl text-gray-300 mb-2 font-inter fade-up" style="animation-delay:0.3s;">
+        Aspiring Data Scientist | AI & ML Enthusiast | Full Stack Learner
+      </p>
+
+      <p class="text-lg text-gray-400 mb-4 font-inter fade-up" style="animation-delay:0.4s;">
+        Second-Year Computer Science and Design student at Maharashtra Institute of Technology, Chhatrapati Sambhaji Nagar.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex gap-4 fade-up" style="animation-delay:0.5s;">
+        <a href="#projects"
+          class="px-4 py-4 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 
+                 hover:shadow-cyan-400/50 hover:scale-105 glow-hover font-inter transition">
+          View My Projects
+        </a>
+
+        <a href="#certificates"
+          class="px-4 py-4 rounded-lg font-semibold shadow-lg 
+                 bg-white text-[#111b32] hover:shadow-purple-400/50 hover:scale-105
+                 glow-hover font-inter transition">
+          View Certificates
+        </a>
+
+        <a href="certificate_pdf/Pranav Resume.pdf" download
+          class="px-4 py-4 rounded-lg font-semibold shadow-lg text-white 
+                 bg-gradient-to-r from-cyan-400 to-purple-500 
+                 hover:from-cyan-500 hover:to-purple-600 
+                 hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">
+          Download My Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Right (Profile Image) -->
+    <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
+      <div class="relative group fade-up" style="animation-delay:0.6s;">
+
+        <!-- Animated glowing border circle -->
+        <div
+          class="w-72 h-72 rounded-full flex items-center justify-center 
+                 bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-500 p-1 animate-pulse
+                 shadow-[0_0_40px_#00ffff80]">
+
+          <div
+            class="w-full h-full rounded-full bg-[#0d1125] flex items-center justify-center 
+                   shadow-inner-glow transform transition-all duration-700 ease-out animate-fade-up">
+
+            <!-- Profile Image -->
+            <img src="images/Pranav.webp" alt="Profile"
+              class="w-76 h-76 object-cover rounded-full border-4 border-cyan-400 shadow-xl 
+                     transition-transform duration-500 hover:scale-105">
+          </div>
         </div>
 
       </div>
-      <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
-        <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
-          <div class="relative group fade-up" style="animation-delay:0.6s;">
-            <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
-              <div class="relative group fade-up" style="animation-delay:0.6s;">
-                <!-- Animated glowing border circle -->
-                <div
-                  class="w-72 h-72 rounded-full flex items-center justify-center bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-500 p-1 animate-pulse shadow-[0_0_40px_#00ffff80]">
-                  <div
-                    class="w-full h-full rounded-full bg-[#111b32] flex items-center justify-center shadow-inner-glow transform transition-all duration-700 ease-out animate-fade-up">
-                    <!-- Profile Image -->
-                    <img src="images/Pranav.webp" alt="Profile"
-                      class="w-76 h-76 object-cover rounded-full border-4 border-cyan-400 shadow-xl transition-transform duration-500 hover:scale-105">
-                  </div>
-                </div>
-              </div>
-            </div>
+    </div>
 
+  </div>
+</section>
 
-
-
-
-
-          </div>
-
-  </section>
   <!-- ========================= ABOUT ME — FINAL ULTRA PREMIUM ========================= -->
   <section id="about" class="about-bg section-transition py-20 relative overflow-hidden">
 
