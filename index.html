@@ -18,48 +18,61 @@
 </head>
 
 <body data-theme="dark" class="dark">
-  <nav
-    class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center shadow-lg bg-[#111b32]/90 dark:bg-white/90 backdrop-blur section-transition">
-    <a href="#home" class="text-2xl font-bold accent-gradient font-poppins">Pranav</a>
-    <ul class="desktop-nav flex gap-6 items-center font-semibold text-lg font-inter">
-      <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
-      <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
-      <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
-      <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
-      <li><a href="#certificates" class="hover:text-cyan-400 transition">Certificates</a></li>
-      <li><a href="/achivment/achivement.html" class="hover:text-cyan-400 transition">Achievements</a></li>
-      <li><a href="/notes_section/notes.html" class="hover:text-cyan-400 transition">Coding Notes</a></li>
-      <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
-      <li>
-        <button id="theme-toggle" class="ml-2 text-xl" aria-label="Toggle dark mode">
-          <span id="theme-icon">🌙</span>
-        </button>
-      </li>
-    </ul>
-    <!-- Hamburger for mobile -->
-    <button id="mobile-menu-btn" class="md:hidden text-3xl p-2" aria-label="Open mobile menu">☰</button>
-  </nav>
-  <!-- Mobile menu -->
-  <div id="mobile-menu"
-    class="fixed top-0 left-0 w-full h-full bg-[#111b32]/90 flex flex-col items-center justify-center z-50 hidden">
-    <button id="close-mobile-menu" class="absolute top-6 right-6 text-3xl p-2 text-cyan-400"
-      aria-label="Close mobile menu">✖️</button>
-    <ul class="flex flex-col gap-6 text-2xl font-semibold text-white font-inter mt-10">
-      <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
-      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
-      <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
-      <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
-      <li><a href="#certificates" onclick="closeMobileMenu()">Certificates</a></li>
-      <li><a href="/achivment/achivement.html" onclick="closeMobileMenu()">Achievements</a></li>
-      <li><a href="/notes_section/notes.html">Coding Notes</a></li>
-      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
-      <li>
-        <button id="theme-toggle" class="ml-2 text-xl" aria-label="Toggle dark mode">
-          <span id="theme-icon">🌙</span>
-        </button>
-      </li>
-    </ul>
-  </div>
+ <nav
+  class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center shadow-lg bg-[#111b32]/90 dark:bg-white/90 backdrop-blur section-transition">
+  
+  <a href="#home" class="text-2xl font-bold accent-gradient font-poppins">Pranav</a>
+
+  <ul class="desktop-nav flex gap-6 items-center font-semibold text-lg font-inter">
+    <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+    <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+    <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+    <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+    <li><a href="#certificates" class="hover:text-cyan-400 transition">Certificates</a></li>
+    <li><a href="/achivment/achivement.html" class="hover:text-cyan-400 transition">Achievements</a></li>
+    <li><a href="/notes_section/notes.html" class="hover:text-cyan-400 transition">Coding Notes</a></li>
+    <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+
+    <!-- DESKTOP THEME BUTTON (UNIQUE ID) -->
+    <li>
+      <button id="theme-toggle" class="ml-2 text-xl" aria-label="Toggle dark mode">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </li>
+  </ul>
+
+  <!-- Hamburger -->
+  <button id="mobile-menu-btn" class="md:hidden text-3xl p-2" aria-label="Open mobile menu">☰</button>
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+<div id="mobile-menu"
+  class="fixed top-0 left-0 w-full h-full bg-[#111b32]/90 flex flex-col items-center justify-center z-50 hidden">
+  
+  <button id="close-mobile-menu" class="absolute top-6 right-6 text-3xl p-2 text-cyan-400"
+    aria-label="Close mobile menu">✖️</button>
+
+  <ul class="flex flex-col gap-6 text-2xl font-semibold text-white font-inter mt-10">
+
+    <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+    <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+    <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+    <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
+    <li><a href="#certificates" onclick="closeMobileMenu()">Certificates</a></li>
+    <li><a href="/achivment/achivement.html" onclick="closeMobileMenu()">Achievements</a></li>
+    <li><a href="/notes_section/notes.html" onclick="closeMobileMenu()">Coding Notes</a></li>
+    <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+
+    <!-- MOBILE THEME BUTTON (UNIQUE ID) -->
+    <li>
+      <button id="mobile-theme-toggle" class="ml-2 text-3xl" aria-label="Toggle dark mode">
+        <span id="mobile-theme-icon">🌙</span>
+      </button>
+    </li>
+
+  </ul>
+</div>
+
   <!-- Hero Section -->
   <section id="home"
     class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 dark:bg-gradient-to-br dark:from-[#111b32] dark:to-[#16213e]">

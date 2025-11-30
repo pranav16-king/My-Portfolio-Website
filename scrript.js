@@ -24,22 +24,40 @@ window.addEventListener('resize', () => {
   }
 });
 
-// Theme toggle
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById('theme-toggle'); 
 const themeIcon = document.getElementById('theme-icon');
+
+const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+const mobileThemeIcon = document.getElementById('mobile-theme-icon');
 
 function setTheme(theme) {
   document.body.setAttribute('data-theme', theme);
   document.body.className = theme === 'dark' ? 'dark' : '';
-  themeIcon.innerText = theme === 'dark' ? '🌙' : '☀️';
+
+  const icon = theme === 'dark' ? '☀️' : '🌙';
+
+  themeIcon.innerText = icon;
+  mobileThemeIcon.innerText = icon;
+
   localStorage.setItem('theme', theme);
 }
 
+const savedTheme = localStorage.getItem('theme') || 'light';
+setTheme(savedTheme);
+
 themeToggle.addEventListener('click', () => {
-  let current = document.body.getAttribute('data-theme');
-  let next = current === 'dark' ? 'light' : 'dark';
+  const current = document.body.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
   setTheme(next);
 });
+
+mobileThemeToggle.addEventListener('click', () => {
+  const current = document.body.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  setTheme(next);
+  closeMobileMenu();
+});
+
 
 // Initialize theme (default = light)
 (function initializeTheme() {
