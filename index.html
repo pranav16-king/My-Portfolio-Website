@@ -3191,215 +3191,91 @@
       </div>
     </div>
   </section>
-  <!-- =========================
-     PROJECTS SECTION (FINAL)
-     SAME DESIGN + TEAM MEMBERS ADDED
-========================= -->
-  <style>
-    .team-box {
-      margin-top: 8px;
-    }
+<!-- PROJECT SECTION -->
+<section id="projects" class="bg-[#e9f0ff] py-24">
+  <div class="container mx-auto px-4">
 
-    .team-member {
-      text-align: center;
-    }
+    <!-- Heading -->
+    <h2 class="text-5xl font-bold text-center mb-16 font-poppins tracking-wide">
+      My
+      <span class="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+        Projects
+      </span>
+    </h2>
 
-    .team-dp {
-      width: 70px;
-      height: 70px;
-      border-radius: 12px;
-      object-fit: cover;
-      margin: auto;
-    }
-
-    .team-name {
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-top: 4px;
-    }
-
-    .team-link {
-      font-size: 0.7rem;
-      color: #3b82f6;
-      text-decoration: underline;
-    }
-
-    .tag {
-      @apply px-2 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold text-xs;
-    }
-
-    .btn-primary {
-      @apply px-3 py-1 rounded bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold hover:scale-105 hover:shadow-md transition-all;
-    }
-  </style>
-
-  <section id="projects" class="white-bg section-transition section-pad">
-    <div class="container-wide px-2">
-
-      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
-        My <span class="accent-gradient">Projects</span>
-      </h2>
-
-      <div class="overflow-y-auto mt-6" style="max-height: 600px;">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          <!-- PROJECT CARD TEMPLATE -->
-          <!-- ========================= -->
-          <!-- Project 1: Blue Carbon MRV -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-
-            <div class="flex items-center gap-2 text-lg font-bold">
-              <span>🌊</span> Blue Carbon MRV System
-            </div>
-
-            <div class="text-md">MRV platform for Blue Carbon estimation & monitoring.</div>
-
-            <div class="w-full h-42 flex items-center justify-center overflow-hidden rounded-lg my-3 bg-gray-200">
-              <video src="/video/Blue_carbon_mrv.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-              <span class="tag">Python</span><span class="tag">Flask</span>
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
-            </div>
-
-            <!-- TEAM MEMBERS 3×2 GRID -->
-            <div class="team-box mt-2">
-              <h3 class="font-bold text-sm text-slate-700 dark:text-slate-200 mb-1">Team Members</h3>
-              <div class="grid grid-cols-3 gap-3">
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=5" class="team-dp">
-                  <p class="team-name">Rohan</p>
-                  <a href="https://github.com/" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=9" class="team-dp">
-                  <p class="team-name">Simran</p>
-                  <a href="https://github.com/" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=14" class="team-dp">
-                  <p class="team-name">Harshit</p>
-                  <a href="https://github.com/" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=22" class="team-dp">
-                  <p class="team-name">Manvi</p>
-                  <a href="https://github.com/" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=30" class="team-dp">
-                  <p class="team-name">Ritik</p>
-                  <a href="https://github.com/" class="team-link">GitHub</a>
-                </div>
-
-              </div>
-            </div>
-
-            <a href="https://github.com/pranav16-king/Blue-Carbon-MRV" class="btn-primary">View on GitHub</a>
-          </div>
-
-          <!-- ========================= -->
-          <!-- Project 2: Lunabot -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🛰️</span> Lunabot</div>
-            <div class="text-md">Space technology autonomous rover simulation.</div>
-
-            <div class="w-full h-42 overflow-hidden rounded-lg my-3 bg-gray-200">
-              <video src="/video/lunabot.mp4" controls class="w-full h-full object-cover rounded-lg"></video>
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-              <span class="tag">Python</span><span class="tag">Flask</span>
-              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
-            </div>
-
-            <!-- TEAM -->
-            <div class="team-box mt-2">
-              <h3 class="font-bold text-sm mb-1">Team Members</h3>
-              <div class="grid grid-cols-3 gap-3">
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=11" class="team-dp">
-                  <p class="team-name">Karan</p>
-                  <a href="#" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=24" class="team-dp">
-                  <p class="team-name">Isha</p>
-                  <a href="#" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=16" class="team-dp">
-                  <p class="team-name">Dev</p>
-                  <a href="#" class="team-link">GitHub</a>
-                </div>
-
-              </div>
-            </div>
-
-            <a href="https://github.com/pranav16-king/practice" class="btn-primary">View on GitHub</a>
-          </div>
-
-          <!-- ========================= -->
-          <!-- Project 3: School Counseling -->
-          <div class="card-bg rounded-2xl shadow-lg card-pad flex flex-col gap-4 font-inter hover:glow-hover">
-
-            <div class="flex items-center gap-2 text-lg font-bold"><span>🎓</span> School Counseling App</div>
-
-            <div class="text-md">Guidance system with session tracking & authentication.</div>
-
-            <div class="w-full h-42 overflow-hidden rounded-lg my-3">
-              <img src="images/school.png" class="w-full h-full object-cover rounded-lg">
-            </div>
-
-            <div class="flex flex-wrap gap-2">
-              <span class="tag">Python</span><span class="tag">Flask</span>
-              <span class="tag">MongoDB</span><span class="tag">HTML</span><span class="tag">CSS</span>
-            </div>
-
-            <!-- TEAM -->
-            <div class="team-box mt-2">
-              <h3 class="font-bold text-sm mb-1">Team Members</h3>
-              <div class="grid grid-cols-3 gap-3">
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=2" class="team-dp">
-                  <p class="team-name">Priya</p>
-                  <a href="#" class="team-link">GitHub</a>
-                </div>
-
-                <div class="team-member">
-                  <img src="https://i.pravatar.cc/100?img=31" class="team-dp">
-                  <p class="team-name">Vicky</p>
-                  <a href="#" class="team-link">GitHub</a>
-                </div>
-
-              </div>
-            </div>
-
-            <a href="https://github.com/pranav16-king/school-counseling-app" class="btn-primary">View on GitHub</a>
-          </div>
-
-          <!-- ========================= -->
-          <!-- AI Pathways Advisor, Agri-Connect, Hospital, Medicine (continue same pattern) -->
-          <!-- I will not repeat all for space — if you want ALL projects written out like these, say:  
-             “Write all project cards with team members”  
-        -->
-
-        </div>
-      </div>
+    <!-- 3x Grid -->
+    <div id="projectContainer"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
     </div>
-  </section>
-  >
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="projectModal"
+  class="fixed inset-0 bg-black/70 backdrop-blur-xl hidden items-center justify-center p-4 z-50">
+
+  <div
+    class="bg-white/95 shadow-2xl rounded-3xl w-full max-w-5xl p-10 relative animate-modal border border-white/40">
+
+    <!-- Close -->
+    <button onclick="closeDetails()"
+      class="absolute top-4 right-4 text-xl bg-white px-4 py-1 rounded-full shadow hover:scale-125 transition">
+      ✖
+    </button>
+
+    <div id="modalContent" class="max-h-[70vh] overflow-y-auto pr-2"></div>
+  </div>
+</div>
+
+<!-- STYLE -->
+<style>
+  .btn-github {
+    background: linear-gradient(135deg, #34e0ff, #7f5aff, #d43bff);
+    color: #0f1b38;
+    padding: 12px 18px;
+    border-radius: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+    animation: pulse 2.1s infinite ease-in-out;
+  }
+
+  .btn-github:hover {
+    transform: scale(1.12);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn-details {
+    background: #e9ecff;
+    color: #111b32;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+  }
+
+  .btn-details:hover {
+    background: #dde2ff;
+    transform: scale(1.05);
+  }
+
+  @keyframes modalZoom {
+    from { opacity: 0; transform: scale(0.7); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  .animate-modal {
+    animation: modalZoom 0.45s ease-out;
+  }
+
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0px rgba(0,255,255,0.4); }
+    50%      { transform: scale(1.06); box-shadow: 0 0 14px rgba(0,255,255,0.6); }
+  }
+</style>
+
+
+
   <!-- Roadmap Section -->
   <section id="roadmap" class="white-bg section-transition section-pad">
     <div class="container-wide px-2">
