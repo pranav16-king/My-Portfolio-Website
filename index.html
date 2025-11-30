@@ -11,150 +11,139 @@
   <!-- Fonts: Poppins & Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet">
-      <!-- EmailJS Script (Updated for New Contact Form) -->
+  <!-- EmailJS Script (Updated for New Contact Form) -->
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body data-theme="dark" class="dark">
- <!-- NAVBAR -->
-<nav
-  class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center 
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center 
          shadow-lg bg-white/90 backdrop-blur section-transition">
 
-  <!-- Logo -->
-  <a href="#home" class="text-2xl font-bold accent-gradient font-poppins">Pranav</a>
+    <!-- Logo -->
+    <a href="#home" class="text-2xl font-bold accent-gradient font-poppins">Pranav</a>
 
-  <!-- Desktop Menu -->
-  <ul class="desktop-nav hidden md:flex gap-6 items-center font-semibold text-lg font-inter text-black">
-    <li><a href="#home" class="hover:text-cyan-500 transition">🏠 Home</a></li>
-    <li><a href="#about" class="hover:text-cyan-500 transition">👤 About</a></li>
-    <li><a href="#skills" class="hover:text-cyan-500 transition">🧠 Skills</a></li>
-    <li><a href="#projects" class="hover:text-cyan-500 transition">💼 Projects</a></li>
-    <li><a href="#certificates" class="hover:text-cyan-500 transition">🎓 Certificates</a></li>
-    <li><a href="/achivment/achivement.html" class="hover:text-cyan-500 transition">🏅 Achievements</a></li>
-    <li><a href="/notes_section/notes.html" class="hover:text-cyan-500 transition">📘 Coding Notes</a></li>
-    <li><a href="#contact" class="hover:text-cyan-500 transition">📬 Contact</a></li>
-  </ul>
+    <!-- Desktop Menu -->
+    <ul class="desktop-nav hidden md:flex gap-6 items-center font-semibold text-lg font-inter text-black">
+      <li><a href="#home" class="hover:text-cyan-500 transition">🏠 Home</a></li>
+      <li><a href="#about" class="hover:text-cyan-500 transition">👤 About</a></li>
+      <li><a href="#skills" class="hover:text-cyan-500 transition">🧠 Skills</a></li>
+      <li><a href="#projects" class="hover:text-cyan-500 transition">💼 Projects</a></li>
+      <li><a href="#certificates" class="hover:text-cyan-500 transition">🎓 Certificates</a></li>
+      <li><a href="/achivment/achivement.html" class="hover:text-cyan-500 transition">🏅 Achievements</a></li>
+      <li><a href="/notes_section/notes.html" class="hover:text-cyan-500 transition">📘 Coding Notes</a></li>
+      <li><a href="#contact" class="hover:text-cyan-500 transition">📬 Contact</a></li>
+    </ul>
 
-  <!-- Hamburger Button (Black + Emoji) -->
-  <button id="mobile-menu-btn"
-    class="md:hidden text-3xl p-2 text-black"
-    aria-label="Open mobile menu">
-    📂
-  </button>
-</nav>
+    <!-- Hamburger Button (Black + Emoji) -->
+    <button id="mobile-menu-btn" class="md:hidden text-3xl p-2 text-black" aria-label="Open mobile menu">
+      📂
+    </button>
+  </nav>
 
 
-<!-- ================= MOBILE MENU ================= -->
-<div id="mobile-menu"
-  class="fixed top-0 left-0 w-full h-full bg-[#111b32]/90 flex flex-col items-center justify-center 
+  <!-- ================= MOBILE MENU ================= -->
+  <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-[#111b32]/90 flex flex-col items-center justify-center 
          z-50 hidden">
 
-  <!-- Close Button (Black Emoji) -->
-  <button id="close-mobile-menu"
-    class="absolute top-6 right-6 text-3xl p-2 text-black"
-    aria-label="Close mobile menu">
-    ❌
-  </button>
+    <!-- Close Button (Black Emoji) -->
+    <button id="close-mobile-menu" class="absolute top-6 right-6 text-3xl p-2 text-black"
+      aria-label="Close mobile menu">
+      ❌
+    </button>
 
-  <!-- Mobile Menu Links -->
-  <ul class="flex flex-col gap-6 text-2xl font-semibold text-white font-inter mt-10 text-center">
+    <!-- Mobile Menu Links -->
+    <ul class="flex flex-col gap-6 text-2xl font-semibold text-white font-inter mt-10 text-center">
 
-    <li><a href="#home" onclick="closeMobileMenu()">🏠 Home</a></li>
-    <li><a href="#about" onclick="closeMobileMenu()">👤 About</a></li>
-    <li><a href="#skills" onclick="closeMobileMenu()">🧠 Skills</a></li>
-    <li><a href="#projects" onclick="closeMobileMenu()">💼 Projects</a></li>
-    <li><a href="#certificates" onclick="closeMobileMenu()">🎓 Certificates</a></li>
-    <li><a href="/achivment/achivement.html" onclick="closeMobileMenu()">🏅 Achievements</a></li>
-    <li><a href="/notes_section/notes.html" onclick="closeMobileMenu()">📘 Coding Notes</a></li>
-    <li><a href="#contact" onclick="closeMobileMenu()">📬 Contact</a></li>
+      <li><a href="#home" onclick="closeMobileMenu()">🏠 Home</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">👤 About</a></li>
+      <li><a href="#skills" onclick="closeMobileMenu()">🧠 Skills</a></li>
+      <li><a href="#projects" onclick="closeMobileMenu()">💼 Projects</a></li>
+      <li><a href="#certificates" onclick="closeMobileMenu()">🎓 Certificates</a></li>
+      <li><a href="/achivment/achivement.html" onclick="closeMobileMenu()">🏅 Achievements</a></li>
+      <li><a href="/notes_section/notes.html" onclick="closeMobileMenu()">📘 Coding Notes</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">📬 Contact</a></li>
 
-  </ul>
-</div>
+    </ul>
+  </div>
 
- <!-- Hero Section (Dark Version) -->
-<section id="home"
-  class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 
+  <!-- Hero Section (Dark Version) -->
+  <section id="home" class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 
          bg-[#0d1125] dark:bg-[#0d1125]">
 
-  <div id="particles-bg"></div>
+    <div id="particles-bg"></div>
 
-  <div class="flex flex-col md:flex-row items-center container-wide px-6 relative z-10">
+    <div class="flex flex-col md:flex-row items-center container-wide px-6 relative z-10">
 
-    <!-- Left Content -->
-    <div class="flex-1">
-      <div class="mb-2 text-cyan-400 font-semibold flex items-center gap-2 font-inter fade-up"
-        style="animation-delay:0.1s;">
-        <span>🤖</span> Welcome to my portfolio
-      </div>
+      <!-- Left Content -->
+      <div class="flex-1">
+        <div class="mb-2 text-cyan-400 font-semibold flex items-center gap-2 font-inter fade-up"
+          style="animation-delay:0.1s;">
+          <span>🤖</span> Welcome to my portfolio
+        </div>
 
-      <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-2 font-poppins fade-up accent-gradient"
-        style="animation-delay:0.2s;">
-        Pranav<br> Samadhan<br>
-        <span class="accent-gradient font-poppins">Khaire</span>
-      </h1>
+        <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-2 font-poppins fade-up accent-gradient"
+          style="animation-delay:0.2s;">
+          Pranav<br> Samadhan<br>
+          <span class="accent-gradient font-poppins">Khaire</span>
+        </h1>
 
-      <p class="text-xl text-gray-300 mb-2 font-inter fade-up" style="animation-delay:0.3s;">
-        Aspiring Data Scientist | AI & ML Enthusiast | Full Stack Learner
-      </p>
+        <p class="text-xl text-gray-300 mb-2 font-inter fade-up" style="animation-delay:0.3s;">
+          Aspiring Data Scientist | AI & ML Enthusiast | Full Stack Learner
+        </p>
 
-      <p class="text-lg text-gray-400 mb-4 font-inter fade-up" style="animation-delay:0.4s;">
-        Second-Year Computer Science and Design student at Maharashtra Institute of Technology, Chhatrapati Sambhaji Nagar.
-      </p>
+        <p class="text-lg text-gray-400 mb-4 font-inter fade-up" style="animation-delay:0.4s;">
+          Second-Year Computer Science and Design student at Maharashtra Institute of Technology, Chhatrapati Sambhaji
+          Nagar.
+        </p>
 
-      <!-- Buttons -->
-      <div class="flex gap-4 fade-up" style="animation-delay:0.5s;">
-        <a href="#projects"
-          class="px-4 py-4 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 
+        <!-- Buttons -->
+        <div class="flex gap-4 fade-up" style="animation-delay:0.5s;">
+          <a href="#projects" class="px-4 py-4 rounded-lg font-semibold shadow-lg text-[#111b32] bg-cyan-400 
                  hover:shadow-cyan-400/50 hover:scale-105 glow-hover font-inter transition">
-          View My Projects
-        </a>
+            View My Projects
+          </a>
 
-        <a href="#certificates"
-          class="px-4 py-4 rounded-lg font-semibold shadow-lg 
+          <a href="#certificates" class="px-4 py-4 rounded-lg font-semibold shadow-lg 
                  bg-white text-[#111b32] hover:shadow-purple-400/50 hover:scale-105
                  glow-hover font-inter transition">
-          View Certificates
-        </a>
+            View Certificates
+          </a>
 
-        <a href="certificate_pdf/Pranav Resume.pdf" download
-          class="px-4 py-4 rounded-lg font-semibold shadow-lg text-white 
+          <a href="certificate_pdf/Pranav Resume.pdf" download class="px-4 py-4 rounded-lg font-semibold shadow-lg text-white 
                  bg-gradient-to-r from-cyan-400 to-purple-500 
                  hover:from-cyan-500 hover:to-purple-600 
                  hover:shadow-purple-400/50 hover:scale-105 glow-hover font-inter transition">
-          Download My Resume
-        </a>
+            Download My Resume
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Right (Profile Image) -->
-    <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
-      <div class="relative group fade-up" style="animation-delay:0.6s;">
+      <!-- Right (Profile Image) -->
+      <div class="flex-1 flex justify-center items-center mt-10 md:mt-0 relative">
+        <div class="relative group fade-up" style="animation-delay:0.6s;">
 
-        <!-- Animated glowing border circle -->
-        <div
-          class="w-72 h-72 rounded-full flex items-center justify-center 
+          <!-- Animated glowing border circle -->
+          <div class="w-72 h-72 rounded-full flex items-center justify-center 
                  bg-gradient-to-br from-blue-500 via-cyan-400 to-purple-500 p-1 animate-pulse
                  shadow-[0_0_40px_#00ffff80]">
 
-          <div
-            class="w-full h-full rounded-full bg-[#0d1125] flex items-center justify-center 
+            <div class="w-full h-full rounded-full bg-[#0d1125] flex items-center justify-center 
                    shadow-inner-glow transform transition-all duration-700 ease-out animate-fade-up">
 
-            <!-- Profile Image -->
-            <img src="images/Pranav.webp" alt="Profile"
-              class="w-76 h-76 object-cover rounded-full border-4 border-cyan-400 shadow-xl 
+              <!-- Profile Image -->
+              <img src="images/Pranav.webp" alt="Profile" class="w-76 h-76 object-cover rounded-full border-4 border-cyan-400 shadow-xl 
                      transition-transform duration-500 hover:scale-105">
+            </div>
           </div>
+
         </div>
-
       </div>
-    </div>
 
-  </div>
-</section>
+    </div>
+  </section>
 
   <!-- ========================= ABOUT ME — FINAL ULTRA PREMIUM ========================= -->
   <section id="about" class=" section-transition py-20 relative overflow-hidden">
@@ -3548,7 +3537,7 @@
   </section>
 
 
- 
+
   <!-- ========================= PROFESSIONAL OVERVIEW — MAX UPGRADE (IMAGE, EMOJI, INSTRUCTOR, MODAL) ========================= -->
   <section id="overview" class="overview-max" aria-labelledby="overview-title">
     <!-- Background lights -->
@@ -3560,7 +3549,7 @@
     <div class="ov-wrap">
       <!-- Header -->
       <header class="ov-head">
-        <h2 id="overview-title"><span class="muted">Professional</span> <span class="accent">Overview</span> ✨</h2>
+        <h2 id="overview-title"><span class="" style="color: #071427;">Professional</span> <span class="accent">Overview</span> ✨</h2>
         <p class="ov-sub">A complete snapshot: profile, progress, tools, mentors, and next steps — interactive &
           responsive.</p>
       </header>
@@ -3575,9 +3564,8 @@
             <div class="hero-top">
               <div class="avatar-wrap" aria-hidden="false">
                 <!-- Replace src with your image -->
-                <img class="avatar-img" src="path/to/your-photo.jpg" alt="Pranav Khaire photo"
-                  onerror="this.style.opacity=0.9; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22><rect width=%22120%22 height=%22120%22 rx=%2216%22 fill=%22%2322d3ee%22 /></svg>';">
-                <div class="avatar-ring" aria-hidden="true"></div>
+                <img class="avatar-img" src="/achivment/member/pranav.webp" alt="Pranav Khaire photo">
+                                <div class="avatar-ring" aria-hidden="true"></div>
               </div>
 
               <div class="hero-info">
