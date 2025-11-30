@@ -11,6 +11,9 @@
   <!-- Fonts: Poppins & Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet">
+      <!-- EmailJS Script (Updated for New Contact Form) -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -57,7 +60,6 @@
       </li>
     </ul>
   </div>
-
   <!-- Hero Section -->
   <section id="home"
     class="relative min-h-screen flex flex-col justify-center items-center section-transition pt-24 dark:bg-gradient-to-br dark:from-[#111b32] dark:to-[#16213e]">
@@ -115,46 +117,7 @@
               </div>
             </div>
 
-            <style>
-              /* Pulse glow animation for circle */
-              @keyframes pulse-glow {
 
-                0%,
-                100% {
-                  box-shadow: 0 0 30px 0 rgba(0, 255, 255, 0.6);
-                }
-
-                50% {
-                  box-shadow: 0 0 50px 10px rgba(0, 255, 255, 0.9);
-                }
-              }
-
-              .animate-pulse {
-                animation: pulse-glow 2s infinite;
-              }
-
-              /* Inner glow */
-              .shadow-inner-glow {
-                box-shadow: inset 0 0 30px rgba(0, 255, 255, 0.5);
-              }
-
-              /* Image fade-up animation */
-              @keyframes fade-up {
-                0% {
-                  opacity: 0;
-                  transform: translateY(30px);
-                }
-
-                100% {
-                  opacity: 1;
-                  transform: translateY(0);
-                }
-              }
-
-              .animate-fade-up {
-                animation: fade-up 1s ease-out forwards;
-              }
-            </style>
 
 
 
@@ -162,7 +125,6 @@
           </div>
 
   </section>
-
   <!-- ========================= ABOUT ME — FINAL ULTRA PREMIUM ========================= -->
   <section id="about" class="about-bg section-transition py-20 relative overflow-hidden">
 
@@ -295,25 +257,8 @@
     </div>
   </section>
 
-  <!-- Fade Animation -->
-  <style>
-    .fade-up {
-      opacity: 0;
-      animation: fadeUp 1s ease forwards;
-    }
 
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(28px);
-      }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 
 
   <!-- ===================== SUPER PREMIUM SKILLS SECTION ===================== -->
@@ -466,26 +411,6 @@
     </div>
   </section>
 
-  <!-- Fade Animation -->
-  <style>
-    .fade-up {
-      opacity: 0;
-      animation: fadeUp 0.9s ease forwards;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0px);
-      }
-    }
-  </style>
-
 
   <!-- Certificates Section: 3x2 grid, scrollable if more than 6 certificates -->
   <section id="certificates" class="white-bg section-transition section-pad backdrop-blur-lg bg-white/60">
@@ -605,75 +530,7 @@
 
           </div>
 
-          <!-- ANIMATIONS -->
-          <style>
-            @keyframes fadeIn {
-              0% {
-                opacity: 0;
-                transform: translateY(15px);
-              }
 
-              100% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-
-            .animate-fade-in {
-              animation: fadeIn 1.2s ease-out;
-            }
-
-            @keyframes floating {
-
-              0%,
-              100% {
-                transform: translateY(0);
-              }
-
-              50% {
-                transform: translateY(-6px);
-              }
-            }
-
-            .animate-floating {
-              animation: floating 3.8s infinite ease-in-out;
-            }
-
-            @keyframes shimmer {
-              0% {
-                opacity: 0.85;
-              }
-
-              50% {
-                opacity: 1;
-              }
-
-              100% {
-                opacity: 0.85;
-              }
-            }
-
-            .animate-shimmer {
-              animation: shimmer 5s infinite ease-in-out;
-            }
-
-            .signature {
-              position: relative;
-              display: inline-block;
-              padding-bottom: 4px;
-            }
-
-            .signature::after {
-              content: "";
-              width: 70%;
-              height: 2px;
-              background: #C3C3C3;
-              position: absolute;
-              left: 15%;
-              bottom: -3px;
-              border-radius: 50px;
-            }
-          </style>
 
           <!-- Certificate: Sankalpana 2025 – Second Prize Winner -->
           <div
@@ -2468,128 +2325,7 @@
                 class="btn-ms">Download</a>
             </div>
           </div>
-          <style>
-            .ms-card {
-              position: relative;
-              padding: 2rem;
-              border-radius: 1.25rem;
-              background: linear-gradient(to bottom right, white, #F3F7FF, #E6EEFF);
-              border: 1px solid #93C5FD;
-              box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-              overflow: hidden;
-              animation: fadeIn 1.2s ease-out;
-            }
 
-            .ms-ribbon {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 12px;
-              background: linear-gradient(to right, #1E3A8A, #0078D4);
-            }
-
-            .ms-header {
-              display: flex;
-              gap: 1rem;
-              margin-top: 10px;
-            }
-
-            .ms-title {
-              font-size: 1.5rem;
-              font-weight: 800;
-              background: linear-gradient(to right, #1E3A8A, #0078D4);
-              -webkit-background-clip: text;
-              color: transparent;
-            }
-
-            .ms-subtitle {
-              font-size: 1.1rem;
-              font-weight: 600;
-              color: #0C1A3A;
-            }
-
-            .ms-img {
-              margin-top: 1.2rem;
-              margin-bottom: 1.2rem;
-              height: 180px;
-              border-radius: 1rem;
-              overflow: hidden;
-              background: white;
-              border: 1px solid #93C5FD;
-              animation: shimmer 4s infinite ease-in-out;
-            }
-
-            .ms-img img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-            }
-
-            .ms-text {
-              font-size: 15px;
-              color: #1F2937;
-              line-height: 1.6;
-            }
-
-            .ms-name {
-              color: #1E3A8A;
-            }
-
-            .ms-info {
-              font-size: 12px;
-              margin-top: 10px;
-              color: #4B5563;
-              display: flex;
-              flex-direction: column;
-            }
-
-            .ms-actions {
-              margin-top: 20px;
-              display: flex;
-              justify-content: center;
-              gap: 1rem;
-            }
-
-            .btn-ms {
-              padding: 8px 18px;
-              font-size: 14px;
-              font-weight: 600;
-              border: 2px solid #0078D4;
-              color: #1E3A8A;
-              border-radius: 10px;
-              transition: 0.3s;
-            }
-
-            .btn-ms:hover {
-              background: #0078D4;
-              color: white;
-            }
-
-            @keyframes fadeIn {
-              0% {
-                opacity: 0;
-                transform: translateY(15px);
-              }
-
-              100% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-
-            @keyframes shimmer {
-
-              0%,
-              100% {
-                opacity: 0.9
-              }
-
-              50% {
-                opacity: 1
-              }
-            }
-          </style>
           <!-- Certificate – HP LIFE AI for Beginners (Completion – Navy + HP Blue Theme) -->
           <div
             class="relative rounded-2xl shadow-2xl p-8 bg-gradient-to-br from-white via-[#F2F8FF] to-[#E6F2FF] border border-blue-300 overflow-hidden animate-fade-in">
@@ -3391,7 +3127,6 @@
   <section id="projects" class="bg-[#e9f0ff] py-24">
     <div class="container mx-auto px-4">
 
-      <!-- Heading -->
       <h2 class="text-5xl font-bold text-center mb-16 font-poppins tracking-wide">
         My
         <span class="bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
@@ -3399,8 +3134,9 @@
         </span>
       </h2>
 
-      <!-- 3x Grid -->
-      <div id="projectContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- FIXED 3x2 GRID + SCROLL -->
+      <div id="projectContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 overflow-y-auto"
+        style="max-height: 750px;">
       </div>
 
     </div>
@@ -3421,10 +3157,6 @@
     </div>
   </div>
 
-
-
-
-  <!-- ========================= ULTIMATE ROADMAP — FINAL IMPROVED (Frontend & Python Completed + "Last Me" Card) ========================= -->
   <section id="roadmap" class="white-bg section-transition py-24 relative overflow-hidden"
     aria-label="Learning roadmap">
 
@@ -3467,6 +3199,9 @@
             <div class="group">
               <div class="group-title">Completed libraries</div>
               <div class="tags">
+                <span class="tag cyan">Python</span>
+                <span class="tag cyan">HTML</span>
+                <span class="tag cyan">CSS</span>
                 <span class="tag cyan">NumPy</span>
                 <span class="tag cyan">Pandas</span>
                 <span class="tag cyan">Matplotlib</span>
@@ -3527,6 +3262,8 @@
               <div class="group-title">Target libraries</div>
               <div class="tags">
                 <span class="tag purple">Scikit-Learn</span>
+                <span class="tag purple">Keras</span>
+                <span class="tag purple">Tenserflow</span>
                 <span class="tag purple">SciPy</span>
               </div>
             </div>
@@ -3654,140 +3391,89 @@
       <!-- Compact summary + "Last Me" highlighted card -->
       <div class="summary-grid">
 
-    <!-- ========================= Compact Lists — Upgraded Design ========================= -->
-<div class="compact-lists-new">
+        <!-- ========================= Compact Lists — Upgraded Design ========================= -->
+        <div class="compact-lists-new">
 
-  <!-- Completed -->
-  <div class="list-card">
-    <div class="list-header">
-      <div class="dot dot-green"></div>
-      <h4 class="list-title">Completed</h4>
-    </div>
+          <!-- Completed -->
+          <div class="list-card">
+            <div class="list-header">
+              <div class="dot dot-green"></div>
+              <h4 class="list-title">Completed</h4>
+            </div>
 
-    <ul class="list-body">
-      <li><span class="tag">Frontend</span> HTML · CSS · JavaScript · Tailwind</li>
-      <li><span class="tag">Backend</span> Python · Flask</li>
-      <li><span class="tag">DS Basics</span> NumPy · Pandas · Matplotlib · Jupyter</li>
-      <li><span class="tag">Python Modules</span> os · random · datetime</li>
-    </ul>
-  </div>
+            <ul class="list-body">
+              <li><span class="tag">Frontend</span> HTML · CSS · JavaScript · Tailwind</li>
+              <li><span class="tag">Backend</span> Python · Flask</li>
+              <li><span class="tag">DS Basics</span> NumPy · Pandas · Matplotlib · Jupyter</li>
+              <li><span class="tag">Python Modules</span> os · random · datetime</li>
+            </ul>
+          </div>
 
-  <!-- In Progress -->
-  <div class="list-card">
-    <div class="list-header">
-      <div class="dot dot-purple"></div>
-      <h4 class="list-title">In Progress</h4>
-    </div>
+          <!-- In Progress -->
+          <div class="list-card">
+            <div class="list-header">
+              <div class="dot dot-purple"></div>
+              <h4 class="list-title">In Progress</h4>
+            </div>
 
-    <ul class="list-body">
-      <li><span class="tag">Advanced DS</span> SciPy · Seaborn · EDA · Feature Engineering</li>
-      <li><span class="tag">Databases</span> MongoDB · MySQL</li>
-      <li><span class="tag">Computer Vision</span> OpenCV</li>
-    </ul>
-  </div>
+            <ul class="list-body">
+              <li><span class="tag">Advanced DS</span> SciPy · Seaborn · EDA · Feature Engineering</li>
+              <li><span class="tag">Databases</span> MongoDB · MySQL</li>
+              <li><span class="tag">Computer Vision</span> OpenCV</li>
+            </ul>
+          </div>
 
-  <!-- Upcoming -->
-  <div class="list-card">
-    <div class="list-header">
-      <div class="dot dot-gray"></div>
-      <h4 class="list-title">Upcoming</h4>
-    </div>
+          <!-- Upcoming -->
+          <div class="list-card">
+            <div class="list-header">
+              <div class="dot dot-gray"></div>
+              <h4 class="list-title">Upcoming</h4>
+            </div>
 
-    <ul class="list-body">
-      <li><span class="tag">Core AI Path</span> Machine Learning · AI · Agentic AI · Deep Learning</li>
-      <li><span class="tag">AI Libraries</span> Scikit-Learn · TensorFlow · Keras · PyTorch · LangChain</li>
-      <li><span class="tag">Extra Skills</span> DOM Handling · Async/Await · Fetch API · Logging · Argparse · glob · PostgreSQL</li>
-    </ul>
-  </div>
+            <ul class="list-body">
+              <li><span class="tag">Core AI Path</span> Machine Learning · AI · Agentic AI · Deep Learning</li>
+              <li><span class="tag">AI Libraries</span> Scikit-Learn · TensorFlow · Keras · PyTorch · LangChain</li>
+              <li><span class="tag">Extra Skills</span> DOM Handling · Async/Await · Fetch API · Logging · Argparse ·
+                glob · PostgreSQL</li>
+            </ul>
+          </div>
 
-</div>
-
-<!-- ========================= Styles for Upgraded Compact Lists ========================= -->
-<style>
-  .compact-lists-new {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-  }
-
-  .list-card {
-    flex: 1;
-    min-width: 260px;
-    background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.9));
-    padding: 18px 20px;
-    border-radius: 18px;
-    box-shadow: 0 12px 32px rgba(10,10,10,0.06);
-    border: 1px solid rgba(0,0,0,0.05);
-    transition: .3s;
-  }
-
-  .list-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 46px rgba(0,0,0,0.12);
-  }
-
-  .list-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 14px;
-  }
-
-  .list-title {
-    font-size: 1.1rem;
-    font-weight: 900;
-    color: #071427;
-    margin: 0;
-  }
-
-  .dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  .dot-green { background: #22d3ee; }
-  .dot-purple { background: #c084fc; }
-  .dot-gray { background: #9ca3af; }
-
-  .list-body {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .list-body li {
-    margin-bottom: 10px;
-    font-weight: 700;
-    color: #071427;
-    line-height: 1.5;
-    display: flex;
-    gap: 6px;
-    align-items: flex-start;
-  }
-
-  .tag {
-    padding: 4px 10px;
-    border-radius: 8px;
-    font-size: .78rem;
-    font-weight: 900;
-    background: linear-gradient(90deg, #22d3ee, #c084fc);
-    color: white;
-    white-space: nowrap;
-  }
-
-  /* Mobile friendly */
-  @media (max-width: 880px) {
-    .compact-lists-new {
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
-</style>
+        </div>
 
 
-        <!-- "Last Me" final personal card -->
+
+        <aside class="last-me" aria-labelledby="lastme-title">
+          <div class="last-me-card">
+
+            <div class="last-me-badge" style="
+      background: linear-gradient(90deg, #22d3ee, #c084fc);
+      color: #fff;
+      font-weight: 900;
+    ">
+              Current Learning
+            </div>
+
+            <h3 id="lastme-title" class="last-me-title" style="color:#071427; font-weight:900;">
+              Technologies for database and Deployment
+            </h3>
+
+            <p class="last-me-text" style="color:#071427; font-weight:700; line-height:1.6;">
+              I am currently learning
+              <strong style="color:#22d3ee;">MongoDB</strong> and
+              <strong style="color:#22d3ee;">MySQL</strong>
+              to build and manage modern database systems. <br><br>
+
+              Along with databases, I am also learning
+              <strong style="color:#c084fc;">Docker</strong> — including creating
+              <strong style="color:#c084fc;">Docker images</strong>, running
+              <strong style="color:#c084fc;">containers</strong>, and using them for
+              <strong style="color:#c084fc;">deployment</strong>.
+            </p>
+
+          </div>
+        </aside>
+
+
         <aside class="last-me" aria-labelledby="lastme-title">
           <div class="last-me-card">
             <div class="last-me-badge">Latest — Me</div>
@@ -3830,666 +3516,227 @@
       Machine Learning, AI, Deep Learning upcoming.</div>
   </section>
 
-  <!-- ========================= STYLES (put in your stylesheet or below in a <style> tag) ========================= -->
-  <style>
-    :root {
-      --card-bg: rgba(255, 255, 255, 0.94);
-      --accent1: #22d3ee;
-      --accent2: #c084fc;
-      --muted: #6b7280;
-    }
 
-    /* base layout */
-    #roadmap {
-      font-family: Inter, system-ui, -apple-system, 'Poppins', sans-serif;
-      color: #0b1220;
-    }
+ 
+  <!-- ========================= PROFESSIONAL OVERVIEW — MAX UPGRADE (IMAGE, EMOJI, INSTRUCTOR, MODAL) ========================= -->
+  <section id="overview" class="overview-max" aria-labelledby="overview-title">
+    <!-- Background lights -->
+    <div class="ov-bg">
+      <div class="ov-glow ov-glow-left"></div>
+      <div class="ov-glow ov-glow-right"></div>
+    </div>
+
+    <div class="ov-wrap">
+      <!-- Header -->
+      <header class="ov-head">
+        <h2 id="overview-title"><span class="muted">Professional</span> <span class="accent">Overview</span> ✨</h2>
+        <p class="ov-sub">A complete snapshot: profile, progress, tools, mentors, and next steps — interactive &
+          responsive.</p>
+      </header>
+
+      <div class="ov-grid">
+
+        <!-- LEFT: Hero with image, badges, progress -->
+        <main class="ov-left" aria-labelledby="name-title">
+          <div class="card hero-card">
+
+            <!-- top row: image + name -->
+            <div class="hero-top">
+              <div class="avatar-wrap" aria-hidden="false">
+                <!-- Replace src with your image -->
+                <img class="avatar-img" src="path/to/your-photo.jpg" alt="Pranav Khaire photo"
+                  onerror="this.style.opacity=0.9; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22><rect width=%22120%22 height=%22120%22 rx=%2216%22 fill=%22%2322d3ee%22 /></svg>';">
+                <div class="avatar-ring" aria-hidden="true"></div>
+              </div>
+
+              <div class="hero-info">
+                <div id="name-title" class="hero-name">Pranav Samadhan Khaire</div>
+                <div class="hero-sub">B.Tech — Computer Science & Design • <span class="badge-small">2nd Year</span>
+                </div>
+
+                <div class="hero-meta">
+                  <span class="meta-item">🏛️ <strong>MIT</strong></span>
+                  <span class="meta-sep">•</span>
+                  <span class="meta-item">🎓 Computer Science & Design</span>
+                </div>
+
+                <div class="hero-verified">
+                  <span class="v-badge">✅ Frontend</span>
+                  <span class="v-badge">✅ Python</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- quick intro -->
+            <p class="hero-desc">
+              I craft responsive frontends and robust backends. Currently strengthening databases (MongoDB & MySQL) and
+              containerized deployments with Docker.
+            </p>
+
+            <!-- progress area -->
+            <div class="progress-area">
+              <div class="progress-row">
+                <div class="label">Data Science 📊</div>
+                <div class="bar" data-percent="70">
+                  <div class="fill"></div>
+                </div>
+                <div class="num">70%</div>
+              </div>
+
+              <div class="progress-row">
+                <div class="label">Machine Learning 🤖</div>
+                <div class="bar" data-percent="15">
+                  <div class="fill"></div>
+                </div>
+                <div class="num">15%</div>
+              </div>
+
+              <div class="progress-row">
+                <div class="label">Databases (MongoDB · MySQL) 🗄️</div>
+                <div class="bar" data-percent="35">
+                  <div class="fill"></div>
+                </div>
+                <div class="num">35%</div>
+              </div>
+
+              <div class="progress-row">
+                <div class="label">Docker & Deployment 🐳</div>
+                <div class="bar" data-percent="30">
+                  <div class="fill"></div>
+                </div>
+                <div class="num">30%</div>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">View Projects 🚀</a>
+              <a href="#contact" class="btn-ghost">Contact ✉️</a>
+            </div>
 
-    .container-wide {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    .bg-lights {
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      overflow: hidden;
-    }
-
-    .light {
-      position: absolute;
-      border-radius: 999px;
-      filter: blur(90px);
-      opacity: .75;
-      transform: translateZ(0);
-    }
-
-    .light-left {
-      width: 420px;
-      height: 420px;
-      top: -60px;
-      left: -40px;
-      background: linear-gradient(135deg, var(--accent1), rgba(34, 211, 238, 0.12));
-      animation: slowPulse 6s ease-in-out infinite;
-    }
-
-    .light-right {
-      width: 520px;
-      height: 520px;
-      bottom: -80px;
-      right: -60px;
-      background: linear-gradient(135deg, rgba(192, 132, 252, 0.2), var(--accent2));
-      animation: slowPulse 7s ease-in-out infinite;
-    }
-
-    .title {
-      text-align: center;
-      font-size: 2.6rem;
-      margin: 0;
-      font-weight: 800;
-      color: #071427;
-      letter-spacing: -0.02em;
-    }
-
-    .accent-gradient {
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #071427;
-      margin-top: 10px;
-      margin-bottom: 28px;
-      font-size: 1rem;
-    }
-
-    /* flow layout */
-    .flow-wrap {
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
-    }
-
-    .flow-stage {
-      width: 270px;
-      min-width: 240px;
-      display: flex;
-      align-items: stretch;
-    }
-
-    .stage-card {
-      background: var(--card-bg);
-      border-radius: 16px;
-      padding: 18px;
-      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
-      backdrop-filter: blur(6px);
-      overflow: hidden;
-      position: relative;
-      transition: transform .35s cubic-bezier(.2, .9, .2, 1), box-shadow .35s;
-    }
-
-    .stage-card:hover {
-      transform: translateY(-8px) scale(1.01);
-      box-shadow: 0 22px 50px rgba(2, 6, 23, 0.12);
-    }
-
-    .stage-header {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
-
-    .stage-icon {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 26px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
-      box-shadow: inset 0 -6px 14px rgba(0, 0, 0, 0.03);
-    }
-
-    .stage-title {
-      margin: 0;
-      font-size: 1.12rem;
-      font-weight: 800;
-      color: #071427;
-    }
-
-    .status-row {
-      margin-top: 6px;
-      display: flex;
-      gap: 8px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .status-pill {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: .78rem;
-      color: white;
-      letter-spacing: .01em;
-    }
-
-    .status-pill.green {
-      background: linear-gradient(90deg, var(--accent1), #06b6d4);
-      box-shadow: 0 8px 28px rgba(34, 211, 238, 0.12);
-    }
-
-    .status-pill.purple {
-      background: linear-gradient(90deg, var(--accent2), #9f7aea);
-      box-shadow: 0 8px 28px rgba(192, 132, 252, 0.12);
-    }
-
-    .status-pill.gray {
-      background: #6b7280;
-      box-shadow: 0 8px 28px rgba(107, 114, 128, 0.06);
-    }
-
-    /* progress */
-    .progress-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .progress-label {
-      font-weight: 800;
-      color: #071427;
-      font-size: .9rem;
-      width: 84px;
-    }
-
-    .progress-bar {
-      flex: 1;
-      height: 10px;
-      background: #eef3f8;
-      border-radius: 999px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .progress-fill {
-      height: 100%;
-      width: 0;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      border-radius: 999px;
-      box-shadow: 0 8px 24px rgba(192, 132, 252, 0.08);
-      transition: width 1.2s cubic-bezier(.2, .9, .2, 1);
-    }
-
-    .progress-text {
-      width: 46px;
-      font-weight: 900;
-      color: #071427;
-      text-align: right;
-      font-size: .9rem;
-    }
-
-    /* groups & tags */
-    .group {
-      margin-top: 12px;
-    }
-
-    .group-title {
-      font-weight: 800;
-      color: #071427;
-      margin-bottom: 8px;
-      font-size: .95rem;
-    }
-
-    .tags {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 7px 14px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: .86rem;
-      color: #071427;
-      box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .tag.cyan {
-      background: linear-gradient(90deg, var(--accent1), #7ed8ec);
-    }
-
-    .tag.purple {
-      background: linear-gradient(90deg, var(--accent2), #b78cf9);
-    }
-
-    /* shimmer */
-    .tag::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -50%;
-      width: 50%;
-      height: 100%;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));
-      transform: skewX(-20deg);
-      transition: left .9s ease;
-    }
-
-    .stage-card:hover .tag::after,
-    .flow-stage:hover .tag::after {
-      left: 140%;
-    }
-
-    /* connector */
-    .connector {
-      width: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .connector-svg {
-      width: 120px;
-      height: 60px;
-      overflow: visible;
-    }
-
-    .connector-svg path {
-      stroke-dasharray: 200;
-      stroke-dashoffset: 200;
-      animation: dash 1s ease forwards 0.5s;
-      filter: drop-shadow(0 8px 20px rgba(192, 132, 252, 0.12));
-    }
-
-    @keyframes dash {
-      to {
-        stroke-dashoffset: 0;
-      }
-    }
-
-    /* ribbon to highlight Python / Frontend completed */
-    .ribbon {
-      position: absolute;
-      right: -18px;
-      top: 26px;
-      transform: rotate(12deg);
-      background: linear-gradient(90deg, #fffbeb, #fff7ed);
-      color: #071427;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-weight: 900;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
-    }
-
-    .ribbon-right {
-      right: -18px;
-    }
-
-    /* compact lists & last-me */
-    .summary-grid {
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .compact-lists {
-      display: flex;
-      gap: 18px;
-      flex: 1 1 55%;
-      min-width: 260px;
-    }
-
-    .compact-lists .col {
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .col-title {
-      font-weight: 900;
-      color: #071427;
-      margin-bottom: 8px;
-    }
-
-    .list {
-      color: #071427;
-      line-height: 1.9;
-      font-weight: 700;
-    }
-
-    .last-me {
-      flex: 0 0 360px;
-      min-width: 260px;
-    }
-
-    .last-me-card {
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(255, 255, 255, 0.92));
-      border-radius: 16px;
-      padding: 18px;
-      box-shadow: 0 14px 40px rgba(2, 6, 23, 0.06);
-      border: 1px solid rgba(10, 10, 10, 0.03);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .last-me-badge {
-      display: inline-block;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      color: white;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-weight: 900;
-      font-size: .82rem;
-      margin-bottom: 10px;
-    }
-
-    .last-me-title {
-      margin: 0;
-      font-size: 1.05rem;
-      font-weight: 900;
-      color: #071427;
-      margin-bottom: 8px;
-    }
-
-    .last-me-text {
-      color: #071427;
-      line-height: 1.6;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-
-    .last-me-stats {
-      display: flex;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .stat {
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 10px;
-      padding: 10px 12px;
-      text-align: center;
-      box-shadow: 0 6px 20px rgba(2, 6, 23, 0.04);
-    }
-
-    .stat-val {
-      font-weight: 900;
-      font-size: 1.05rem;
-    }
-
-    .stat-label {
-      font-size: .78rem;
-      color: #334155;
-      font-weight: 800;
-    }
-
-    .last-me-cta {
-      display: flex;
-      gap: 10px;
-      margin-top: 6px;
-    }
-
-    .btn {
-      padding: 10px 14px;
-      border-radius: 10px;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      color: white;
-      font-weight: 900;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 10px 30px rgba(34, 211, 238, 0.08);
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 2px solid rgba(10, 10, 10, 0.06);
-      color: #071427;
-      font-weight: 900;
-    }
-
-    /* micro animations */
-    @keyframes slowPulse {
-      0% {
-        transform: scale(1)
-      }
-
-      50% {
-        transform: scale(1.03)
-      }
-
-      100% {
-        transform: scale(1)
-      }
-    }
-
-    @keyframes floatX {
-      0% {
-        transform: translateY(0)
-      }
-
-      50% {
-        transform: translateY(-6px)
-      }
-
-      100% {
-        transform: translateY(0)
-      }
-    }
-
-    .flow-stage .stage-card {
-      animation: floatX 5s ease-in-out infinite;
-    }
-
-    .flow-stage:hover .stage-card {
-      animation-play-state: paused;
-    }
-
-    /* responsive adjustments */
-    @media (max-width: 1100px) {
-      .flow-wrap {
-        gap: 12px;
-      }
-
-      .flow-stage {
-        width: 240px;
-      }
-
-      .last-me {
-        flex: 0 0 320px;
-      }
-    }
-
-    @media (max-width: 880px) {
-      .flow-wrap {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .connector {
-        display: none;
-      }
-
-      .flow-stage {
-        width: 94%;
-      }
-
-      .summary-grid {
-        flex-direction: column;
-        gap: 18px;
-      }
-
-      .compact-lists {
-        order: 2;
-      }
-
-      .last-me {
-        order: 1;
-        width: 100%;
-      }
-
-      .title {
-        font-size: 2.1rem;
-      }
-    }
-  </style>
-
-  <!-- ========================= JS: animate progress bars + reveal connectors + small interactions ========================= -->
-  <script>
-    (function () {
-      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-      // Animate a single progress-fill element to the target percent with counter
-      function animateProgress(stageEl) {
-        const bar = stageEl.querySelector('.progress-bar .progress-fill');
-        if (!bar) return;
-        const percent = parseInt(stageEl.querySelector('.progress-bar').dataset.percent || 0, 10);
-        // animate width
-        requestAnimationFrame(() => {
-          bar.style.width = percent + '%';
-        });
-        // animated counter
-        const text = stageEl.querySelector('.progress-text');
-        if (text) {
-          let start = 0;
-          const duration = 900;
-          const stepTime = Math.max(10, Math.floor(duration / Math.max(1, percent)));
-          const timer = setInterval(() => {
-            start++;
-            text.textContent = Math.min(start, percent) + '%';
-            if (start >= percent) clearInterval(timer);
-          }, stepTime);
-        }
-      }
-
-      function elementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return rect.top < (window.innerHeight || document.documentElement.clientHeight) - 60 && rect.bottom > 80;
-      }
-
-      const stages = Array.from(document.querySelectorAll('.flow-stage'));
-      const connectors = Array.from(document.querySelectorAll('.connector svg path'));
-
-      function reveal() {
-        stages.forEach((s, i) => {
-          if (s.dataset.played) return;
-          if (elementInViewport(s)) {
-            s.dataset.played = "1";
-            if (!prefersReduced) animateProgress(s);
-            // reveal connector path before this stage (if exists)
-            const conn = s.previousElementSibling;
-            if (conn && conn.querySelector('path')) {
-              conn.querySelector('path').style.opacity = 1;
-              conn.querySelector('path').style.strokeDashoffset = 0;
-            }
-          }
-        });
-      }
-
-      // initial run + scroll
-      reveal();
-      window.addEventListener('scroll', reveal, { passive: true });
-      window.addEventListener('resize', reveal);
-
-      // add keyboard nav
-      const focusables = stages;
-      focusables.forEach((el, idx) => {
-        el.tabIndex = 0;
-        el.addEventListener('keydown', (e) => {
-          if (e.key === 'ArrowRight') {
-            const next = focusables[idx + 1]; if (next) next.focus();
-          } else if (e.key === 'ArrowLeft') {
-            const prev = focusables[idx - 1]; if (prev) prev.focus();
-          }
-        });
-      });
-
-      // small hover micro animation for connectors
-      document.querySelectorAll('.connector').forEach(c => {
-        c.addEventListener('mouseenter', () => {
-          const p = c.querySelector('path'); if (p) p.style.filter = 'drop-shadow(0 12px 30px rgba(192,132,252,0.18))';
-        });
-        c.addEventListener('mouseleave', () => {
-          const p = c.querySelector('path'); if (p) p.style.filter = '';
-        });
-      });
-
-      // ensure first-stage played immediately on load for mobile
-      if (stages[0]) {
-        setTimeout(() => { if (!prefersReduced) animateProgress(stages[0]); }, 300);
-      }
-    })();
-  </script>
-
-
-  <!-- Professional Overview Section -->
-  <section id="overview" class="white-bg section-transition section-pad">
-    <div class="container-wide px-2">
-      <h2 class="text-4xl font-bold text-center section-head font-poppins fade-up" style="animation-delay:0.1s;">
-        Professional <span class="accent-gradient">Overview</span>
-      </h2>
-      <div
-        class="rounded-2xl shadow-lg card-pad card-bg flex flex-col items-center gap-2 section-transition font-inter fade-up"
-        style="animation-delay:0.2s;">
-        <div class="font-bold text-2xl font-poppins">Pranav Samadhan Khaire</div>
-        <div class="flex gap-6 justify-center py-2">
-          <div class="flex flex-col items-center gap-1">
-            <span class="text-cyan-400 text-2xl">🎓</span>
-            <span class="font-semibold">Computer Science and Design</span>
           </div>
-          <div class="flex flex-col items-center gap-1">
-            <span class="text-purple-400 text-2xl">🏛️</span>
-            <span class="font-semibold">MIT, Chhatrapati Sambhaji Nagar</span>
+        </main>
+
+        <!-- RIGHT: Details, chips, mentor and timeline -->
+        <aside class="ov-right" aria-labelledby="details-title">
+          <div class="card details-card">
+
+            <h3 id="details-title" class="details-h">Expertise • Tools • Mentors</h3>
+            <p class="details-note">Completed → Learning → Upcoming — click any chip for quick notes.</p>
+
+            <!-- Chips groups -->
+            <div class="chips-row">
+              <div class="chip-group">
+                <div class="group-title">✅ Completed</div>
+                <div class="chips">
+                  <button class="chip completed"
+                    data-note="Frontend projects: responsive sites with Tailwind + JS">HTML</button>
+                  <button class="chip completed" data-note="Styled layouts, grid & Flexbox">CSS</button>
+                  <button class="chip completed" data-note="Interactive UI logic">JavaScript</button>
+                  <button class="chip completed" data-note="Utility-first styling">Tailwind</button>
+                  <button class="chip completed" data-note="Scripting & backend APIs">Python</button>
+                  <button class="chip completed" data-note="Micro web apps & APIs">Flask</button>
+                  <button class="chip completed" data-note="Core DS tools">NumPy</button>
+                  <button class="chip completed" data-note="Dataframes & ETL">Pandas</button>
+                  <button class="chip completed" data-note="Plots & charts">Matplotlib</button>
+                </div>
+              </div>
+
+              <div class="chip-group">
+                <div class="group-title">🔄 Learning</div>
+                <div class="chips">
+                  <button class="chip learning" data-note="Advanced stats & algorithms">SciPy</button>
+                  <button class="chip learning" data-note="Statistical plotting">Seaborn</button>
+                  <button class="chip learning" data-note="NoSQL DB — documents">MongoDB</button>
+                  <button class="chip learning" data-note="Relational DB — SQL">MySQL</button>
+                  <button class="chip learning" data-note="Image processing & CV">OpenCV</button>
+                  <button class="chip learning" data-note="Container images & deployment">Docker</button>
+                </div>
+              </div>
+
+              <div class="chip-group">
+                <div class="group-title">⏳ Upcoming</div>
+                <div class="chips">
+                  <button class="chip upcoming" data-note="ML models, pipelines">Scikit-Learn</button>
+                  <button class="chip upcoming" data-note="Neural network library">TensorFlow</button>
+                  <button class="chip upcoming" data-note="High-level DL API">Keras</button>
+                  <button class="chip upcoming" data-note="Research DL library">PyTorch</button>
+                  <button class="chip upcoming" data-note="LLM apps & chains">LangChain</button>
+                  <button class="chip upcoming" data-note="Agentic AI research">Agentic AI</button>
+                  <button class="chip upcoming" data-note="Advanced RDBMS">PostgreSQL</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mentor / Instructor
+          <div class="mentor">
+            <div class="mentor-left">
+              <img class="mentor-pic" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect width='64' height='64' rx='12' fill='%23c084fc'/></svg>" alt="Instructor">
+            </div>
+            <div class="mentor-right">
+              <div class="mentor-name">Mentor: <strong>Dr. A. Sharma</strong> 👨‍🏫</div>
+              <div class="mentor-role">Data Science Instructor • MIT (Adjunct)</div>
+              <div class="mentor-note">Weekly code reviews, project feedback & research guidance.</div>
+            </div>
+          </div> -->
+
+            <!-- Metrics -->
+            <div class="metrics-row">
+              <div class="metric">
+                <div class="m-big">12+</div>
+                <div class="m-small">Projects</div>
+              </div>
+              <div class="metric">
+                <div class="m-big">10+</div>
+                <div class="m-small">Skills</div>
+              </div>
+              <div class="metric">
+                <div class="m-big">3</div>
+                <div class="m-small">Certifications</div>
+              </div>
+              <div class="metric">
+                <div class="m-big">3</div>
+                <div class="m-small">In-Progress</div>
+              </div>
+            </div>
+
+            <!-- mini timeline / roadmap -->
+            <div class="mini-roadmap">
+              <svg viewBox="0 0 420 80" class="mini-svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="mg1" x1="0" x2="1">
+                    <stop offset="0" stop-color="#22d3ee" />
+                    <stop offset="1" stop-color="#c084fc" />
+                  </linearGradient>
+                </defs>
+                <path d="M20 60 L100 20 L200 20 L300 60 L380 60" stroke="rgba(10,10,10,0.06)" stroke-width="8"
+                  fill="none" stroke-linecap="round" />
+                <circle cx="100" cy="20" r="9" fill="#22d3ee" />
+                <circle cx="200" cy="20" r="9" fill="#c084fc" />
+                <circle cx="300" cy="60" r="9" fill="#9ca3af" />
+              </svg>
+            </div>
+
           </div>
-          <div class="flex flex-col items-center gap-1">
-            <span class="text-cyan-400 text-2xl">🧑‍🎓</span>
-            <span class="font-semibold">Second Year</span>
-          </div>
-        </div>
-        <div class="mt-2 flex flex-wrap gap-2 justify-center">
-          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Data Science</span>
-          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Artificial Intelligence</span>
-          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Machine Learning</span>
-          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Deep Learning</span>
-          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Web Development</span>
-          <span class="px-3 py-1 rounded bg-cyan-400 text-[#111b32] font-semibold">Full Stack Development</span>
-        </div>
-        <a href="#certificates"
-          class="mt-4 px-6 py-2 bg-gradient-to-r from-cyan-400 to-purple-400 text-[#111b32] font-bold rounded-lg shadow-lg hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-500 transition font-inter">View
-          Certificates</a>
+        </aside>
       </div>
-      <div class="mt-8 flex justify-center gap-8 fade-up" style="animation-delay:0.3s;">
-        <div class="flex flex-col items-center">
-          <span class="text-2xl font-bold text-cyan-400">10+</span>
-          <span class="font-semibold">Skills Mastered</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <span class="text-2xl font-bold text-purple-400">5+</span>
-          <span class="font-semibold">Projects Completed</span>
-        </div>
-        <div class="flex flex-col items-center">
-          <span class="text-2xl font-bold text-cyan-400">3+</span>
-          <span class="font-semibold">Certifications</span>
-        </div>
+    </div>
+
+    <!-- Modal for chip notes -->
+    <div id="chip-modal" class="chip-modal" role="dialog" aria-modal="true" aria-hidden="true"
+      aria-labelledby="chip-modal-title">
+      <div class="chip-modal-card" role="document">
+        <button class="chip-close" aria-label="Close modal">✕</button>
+        <h4 id="chip-modal-title">Detail</h4>
+        <p id="chip-modal-body"></p>
       </div>
     </div>
   </section>
+
+
+
+
+
 
   <!-- Contact Section -->
   <section id="contact" class="white-bg section-transition section-pad" style="min-height:500px;">
@@ -4568,44 +3815,6 @@
       </div>
     </div>
   </section>
-
-  <!-- EmailJS Script -->
-  <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    emailjs.init('buYZsGztatdP8xMkN');
-
-    const form = document.getElementById('contactForm');
-    const formMsg = document.getElementById('formMsg');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const formData = {
-        name: form.elements['name'].value,
-        email: form.elements['email'].value,
-        phone: form.elements['phone'].value || 'N/A',
-        service: form.elements['service'].value,
-        details: form.elements['details'].value,
-        time: new Date().toLocaleString()  // Matches your {{time}} key
-      };
-
-      emailjs.send('service_jgru7x7', 'template_67aesx8', formData)
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-          formMsg.classList.remove('hidden');
-          formMsg.textContent = "Thank you! Your message has been sent.";
-          form.reset();
-          setTimeout(() => formMsg.classList.add('hidden'), 3000);
-        }, function(error) {
-          console.log('FAILED...', error);
-          formMsg.classList.remove('hidden');
-          formMsg.textContent = "Oops! Something went wrong. Please try again.";
-          setTimeout(() => formMsg.classList.add('hidden'), 3000);
-        });
-    });
-  });
-</script> -->
 
 
   <footer class="footer-bg py-12 text-center md:text-left section-transition border-t border-gray-700">
