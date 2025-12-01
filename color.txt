@@ -1,0 +1,321 @@
+⭐ 🔵 1. PARTICIPATION THEME — “SkyFresh Minimal”
+Purpose:
+
+For participation, webinars, hackathons, quizzes, campus events, online sessions.
+
+Color Psychology:
+
+Blue → trust, clarity, learning
+
+Sky blue → freshness, simplicity
+
+Visual Styling:
+
+Top Bar Gradient: from-[#0EA5E9] to-[#0284C7]
+
+Background: from-white via-[#F0F8FF] to-[#E6F4FF]
+
+Border: border-sky-200
+
+Text Highlights: #0284C7
+
+Shadow: shadow-2xl (soft, clean)
+
+Image Frame: subtle shimmer + soft sky ring
+
+Buttons: sky-blue border → hover sky fill
+
+Animation / Effects:
+
+✔ Fade-in
+✔ Image shimmer hover
+✔ Clean minimal academic aesthetic
+
+Usage Examples:
+
+SkillEcted webinars,
+Hack4Us,
+TATA Crucible,
+HP Power Lab,
+SkillEcted Python/Cyber/Webinar certificates,
+Any general participation.
+
+🔷 AUTHORIZATION SECTION (for Participation Theme)
+
+This section is SAME for all themes, only colors change.
+
+Purpose:
+
+To maintain formal, clean certification credibility.
+
+Structure:
+<div class="flex flex-col text-xs text-gray-700 leading-relaxed">
+  <span><strong>Status:</strong> PARTICIPATION</span>
+  <span><strong>Signed By:</strong> Issuer / Program Coordinator</span>
+  <span><strong>Issued By:</strong> Organization / Institute</span>
+  <span><strong>Reference Code:</strong> EVENT-CODE</span>
+  <span><strong>Date Issued:</strong> DD Month YYYY</span>
+</div>
+
+Style Rules:
+
+✔ Always text-xs, text-gray-700
+✔ Same sequence for every certificate
+✔ Never use color inside signature block (always gray)
+✔ 4–5 lines max
+✔ Keeps uniformity on your entire website
+
+⭐ 🟣 2. COMPLETION THEME — “Royal Lavender Pro”
+Purpose:
+
+For course completion, training modules, e-learning platform completions.
+
+Color Psychology:
+
+Purple → knowledge, mastery
+
+Lavender → elegance, premium learning
+
+Visual Styling:
+
+Header Bar Gradient: from-purple-500 to-indigo-600
+
+Background: from-white via-purple-50 to-purple-100
+
+Border: border-purple-200
+
+Text Highlight: #6D28D9
+
+Shadow: shadow-xl
+
+Image Frame: lavender glow ring
+
+Buttons: purple border → purple hover fill
+
+Effects:
+
+✔ Premium shine
+✔ Gentle mastery tone
+✔ Professional learning-certificate feel
+
+Usage Examples:
+
+Simplilearn DSA
+Simplilearn Databricks ML
+Simplilearn SkillUp courses
+EDUCBA Python
+HP Life (AI for Beginners, Data Science Analytics)
+Unstop Courses (Marketing Capsule, Supply Chain, ProdMan, GS Interview)
+
+🟣 AUTHORIZATION SECTION (Completion Theme)
+
+Structure is same, theme color only for titles.
+
+<div class="flex flex-col text-xs text-gray-700 leading-relaxed">
+  <span><strong>Status:</strong> COMPLETED</span>
+  <span><strong>Signed By:</strong> Instructor / Program Lead</span>
+  <span><strong>Issued By:</strong> Platform / Organization</span>
+  <span><strong>Certificate ID:</strong> XXXX-XXXX</span>
+  <span><strong>Date:</strong> DD Month YYYY</span>
+</div>
+
+⭐ 💛 3. WINNER THEME — “Royal Gold Luxe”
+Purpose:
+
+For Winners, Rank Holders, Top 3, Competition Excellence, Awards.
+
+Color Psychology:
+
+Gold → prestige, achievement, excellence
+
+Dark contrast → premium, award-grade
+
+Visual Styling:
+
+Header Gradient: from-[#FACC15] to-[#EAB308] (true gold)
+
+Background: from-white via-[#FFF7D6] to-[#FDE68A]
+
+Border: border-yellow-400
+
+Text Highlight: #B45309 (dark-gold)
+
+Image Frame: gold-glow ring
+
+Shadow: deep golden shadow
+
+Ribbon: optional gold ribbon badge
+
+Buttons: gold border → gold fill
+
+Effects:
+
+✔ Premium shimmering outline
+✔ Award-level golden glow
+✔ Floating animation for header
+
+Usage Examples:
+
+Your CogniSphere winning certificates
+Sankalpana 2025 (2nd Prize)
+Any 1st / 2nd / 3rd prize achievements
+National-level awards
+Major hackathon wins
+
+💛 AUTHORIZATION SECTION (Winner Theme)
+<div class="flex flex-col text-xs text-gray-700 leading-relaxed">
+  <span><strong>Status:</strong> WINNER</span>
+  <span><strong>Rank:</strong> 1st / 2nd / 3rd</span>
+  <span><strong>Signed By:</strong> Event Coordinator / HOD / Director</span>
+  <span><strong>Issued By:</strong> Institution Name</span>
+  <span><strong>Reference Code:</strong> EVENT-YEAR-RANK</span>
+</div>
+
+
+Important:
+Even winner certificates use gray signature text, NOT gold, to keep it professional.
+
+⭐ 💙 4. APPRECIATION / RECOGNITION THEME — “BlueSteel Prestige”
+Purpose:
+
+For formal recognition, government certificates, official acknowledgements, ministry recognitions.
+
+Color Psychology:
+
+Steel blue → authority, discipline
+
+Deep blue → trust, official tone
+
+Visual Styling:
+
+Header Gradient: from-blue-900 to-blue-700
+
+Background: from-white via-blue-50 to-blue-100
+
+Border: border-blue-400
+
+Text Highlight: #1E3A8A
+
+Shadow: deep official shadow
+
+Buttons: navy blue border → navy fill
+
+Effects:
+
+✔ Formal government feel
+✔ Authoritative look
+✔ Clean premium aesthetic
+
+Usage Examples:
+
+MY Bharat
+Government recognition
+IBM Digital Badge (formal type)
+Oracle Recognitions
+Any "Appreciation" certificate
+
+💙 AUTHORIZATION SECTION (Recognition Theme)
+<div class="flex flex-col text-xs text-gray-700 leading-relaxed">
+  <span><strong>Status:</strong> RECOGNIZED / APPRECIATED</span>
+  <span><strong>Issued By:</strong> Government / Ministry / Organization</span>
+  <span><strong>Authorized Signatory:</strong> Official Signer Name</span>
+  <span><strong>Reference Code:</strong> GOVT-REF-NUMBER</span>
+  <span><strong>Date Issued:</strong> DD Month YYYY</span>
+</div>
+
+⭐ 5. DIGITAL BADGE THEME — “TechNavy Neon”
+Purpose:
+
+For Microsoft Badges, IBM Badges, Credly, SkillBadges, AI Certifications.
+
+Color Psychology:
+
+Navy → technical confidence
+
+Neon blue → AI + futuristic energy
+
+Visual Styling:
+
+Header Gradient: Navy → neon-cyan
+
+Background: from-white via-[#F3F7FF] to-[#EAF2FF]
+
+Highlight: Neon blue
+
+Image Frame: Neon glow ring
+
+Buttons: neon border → neon fill
+
+Shadow: modern UI shadow
+
+Effects:
+
+✔ Futuristic neon glow
+✔ Badge-style card
+✔ AI/Cloud inspired design
+
+Usage Examples:
+
+Microsoft (all 8 badges)
+IBM AI Literacy
+Any skill badge in future
+
+🔵 AUTHORIZATION SECTION (Digital Badge Theme)
+<div class="flex flex-col text-xs text-gray-700 leading-relaxed">
+  <span><strong>Status:</strong> VERIFIED</span>
+  <span><strong>Issued By:</strong> Microsoft / IBM / Credly</span>
+  <span><strong>Verification Link:</strong> URL or Reference Code</span>
+  <span><strong>Badge Code:</strong> BADGE-ID</span>
+  <span><strong>Date:</strong> DD Month YYYY</span>
+</div>
+
+⭐ 6. PREMIUM ACHIEVEMENT THEME — “Platinum Frost” (Future High-Value)
+Purpose:
+
+Reserved for big achievements:
+
+AWS Cloud Certification
+
+Google Cloud Certification
+
+Internships
+
+Industrial letters
+
+Paid Certifications
+
+Visual Styling:
+
+Silver–blue gradient header
+
+Frosted glass background
+
+Platinum border
+
+Cool glow outline
+
+Premium frosted buttons
+
+Effects:
+
+✔ Ultra-premium
+✔ Corporate grade
+✔ Perfect for CV impact
+
+AUTHORIZATION SECTION (Platinum Theme)
+<div class="flex flex-col text-xs text-gray-700 leading-relaxed">
+  <span><strong>Status:</strong> CERTIFIED / QUALIFIED</span>
+  <span><strong>Issued By:</strong> Company / Governing Body</span>
+  <span><strong>Authorized Signatory:</strong> Signer Name</span>
+  <span><strong>Credential ID:</strong> ID-CODE</span>
+  <span><strong>Date:</strong> DD Month YYYY</span>
+</div>
+
+✅ FINAL SUMMARY
+Theme	Use Case	Color Mood	Signature Block Style
+🔵 SkyFresh	Participation	Trust & Learning	Always Gray, Standard Format
+🟣 Lavender Pro	Completion	Mastery & Premium	Standard Gray Format
+💛 Gold Luxe	Winner	Achievement & Prestige	Standard Gray, Rank Included
+💙 BlueSteel	Recognition	Authority	Standard Gray, Official Tone
+🔵 Neon Navy	Digital Badges	Tech+AI	Standard Gray, Verified Info
+🩶 Platinum Frost	Premium Certs	Corporate	Standard Gray, ID Focused

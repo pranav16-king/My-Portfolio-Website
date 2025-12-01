@@ -1725,3 +1725,52 @@ a.social-icon:hover {
         transform: scale(1)
       }
     }
+.social-container {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  transition: all 0.25s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.social-icon img {
+  width: 22px;
+  height: 22px;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Hover Animation */
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.12);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+/* Brand Hover Colors */
+.github:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.linkedin:hover {
+  background: #0A66C2;
+}
+.gmail:hover {
+  background: #D44638;
+}
+.twitter:hover {
+  background: #1DA1F2;
+}
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
