@@ -80,7 +80,7 @@ const projects = [
     thumbnail: "/video/Blue_carbon_mrv.mp4",
     type: "video",
     tech: ["Python", "Flask", "HTML", "CSS", "JavaScript", "AI"],
-    github: "https://github.com/pranav16-king/Blue-Carbon-MRV",
+    github: "https://github.com/pranav16-king/Blue-Carbon-MRV.",
     team: [
       { name: "Pranav Khaire ", dp: "/achivment/member/pranav.webp", github: "https://github.com/pranav16-king" },
       { name: "", dp: "/achivment/member/male.avif", github: "https://github.com" },

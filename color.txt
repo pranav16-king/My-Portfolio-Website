@@ -319,3 +319,4 @@ Theme	Use Case	Color Mood	Signature Block Style
 💙 BlueSteel	Recognition	Authority	Standard Gray, Official Tone
 🔵 Neon Navy	Digital Badges	Tech+AI	Standard Gray, Verified Info
 🩶 Platinum Frost	Premium Certs	Corporate	Standard Gray, ID Focused
+i am Pranav
