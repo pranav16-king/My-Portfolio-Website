@@ -5814,6 +5814,39 @@
     </div>
   </section>
 
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("buYZsGztatdP8xMkN"); // Your Public Key
+</script>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let formMsg = document.getElementById("formMsg");
+
+    const formData = {
+        name: this.name.value,
+        email: this.email.value,
+        phone: this.phone.value,
+        service: this.service.value,
+        details: this.details.value,
+        time: new Date().toLocaleString()
+    };
+
+    emailjs.send("service_kxru7ff", "template_53es3ij", formData)
+        .then(function () {
+            formMsg.classList.remove("hidden");
+            formMsg.innerText = "Thank you! Your message has been sent.";
+        })
+        .catch(function (error) {
+            formMsg.classList.remove("hidden");
+            formMsg.innerText = "Failed to send message. Please try again.";
+            console.error("EmailJS Error:", error);
+        });
+});
+</script>
 
   <footer class="footer-bg py-12 text-center md:text-left section-transition border-t border-gray-700">
     <div class="container-wide px-4 md:px-8">
