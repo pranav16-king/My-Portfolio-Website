@@ -5728,11 +5728,6 @@
     </div>
   </section>
 
-
-
-
-
-
   <!-- Contact Section -->
   <section id="contact" class="white-bg section-transition section-pad" style="min-height:500px;">
     <div class="container-wide px-2 text-center">
@@ -5838,11 +5833,11 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     emailjs.send("service_kxru7ff", "template_53es3ij", formData)
         .then(function () {
             formMsg.classList.remove("hidden");
-            formMsg.innerText = "Thank you! Your message has been sent.";
+            formMsg.innerText = "🎉 Thank you! Your message has been sent. We will contact you fastly!";
         })
         .catch(function (error) {
             formMsg.classList.remove("hidden");
-            formMsg.innerText = "Failed to send message. Please try again.";
+            formMsg.innerText = "⚠️ Failed to send message. Please try again.";
             console.error("EmailJS Error:", error);
         });
 });
