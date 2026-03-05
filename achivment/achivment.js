@@ -3,25 +3,54 @@ function achievementSlider() {
   return {
     current: 0,
     achievements: [
-      {
-        title: "🏅 Cogni-Sphere 2025 (Project Compition Winner)",
-        description: "Certificate of Achievement awarded to <strong>Pranav Khaire</strong> for securing <strong>First Rank</strong>.",
-        details: [
-          "<strong>Event:</strong> Cogni-Sphere 2025 – 2-Day Tech & Non-Tech Event",
-          "<strong>Category:</strong> Project Competition",
-          "<strong>Organizer:</strong> IETE Student Forum, ECE Dept, MIT Chhatrapati Sambhajinagar",
-          "<strong>Dates:</strong> 13-14 Oct 2025",
-          "<strong>Location:</strong> MIT Chhatrapati Sambhajinagar, Maharashtra, India"
-        ],
-        images: ["img/project1 (1).jpg", "img/project1 (2).jpg", "img/project1 (3).jpg", "img/project1 (4).jpg"],
-        team: [
-          { name: "Pranav Khaire", role: "Project Lead(Backend,frontend Devloper)", photo: "member/pranav.webp" },
-          { name: "Varad Deshpande", role: "Presentation", photo: "member/male.avif" },
-          { name: "Satydeep kharat", role: "UI/UX Designer", photo: "member/male.avif" },
-          { name: "Aniket", role: "Backend Developer", photo: "member/male.avif" }
-
-        ]
-      },
+   
+      
+{
+  title: "HackFusion 3 Hackathon 💻 (Participation)",
+  description: "Certificate of Participation presented to <strong>Pranav Samadhan Khaire</strong> for participating in HackFusion 3 Hackathon organized at SGGSIET Nanded.",
+  details: [
+    "<strong>Event:</strong> HackFusion 3 – National Level Hackathon",
+    "<strong>Segment:</strong> Software & Innovation Hackathon",
+    "<strong>Organizer:</strong> SWAG Devs Club, SGGSIET Nanded",
+    "<strong>Dates:</strong> 27, 28 February & 1 March 2026",
+    "<strong>Supported by:</strong> Google Developer Groups (GDG) On Campus – SGGSIET Nanded"
+  ],
+  signatories: [
+    "🖊️ Dr. J. M. Waghmare – Faculty Coordinator",
+    "🖊️ Dr. S. B. Dethe – Dean Student Affairs",
+    "🖊️ Dr. Manesh Kokare – Director, SGGSIET"
+  ],
+  images: ["img/hackfusion.jpeg","img/hackfusion2.jpeg","img/hackfusion3.jpeg"],
+  team: [
+    { name: "Pranav Samadhan Khaire", role: "Team member", photo: "member/pranav.webp" },
+    { name: "Parth Kulkarni", role: "Team Leader", photo: "member/male.avif" },
+    { name: "Mitali Wadekar", role: "Team Member", photo: "member/female.avif" },
+    { name: "Sravani Kulkarni", role: "Team Member", photo: "member/female.avif" }
+  ]
+},
+{
+  title: "DIPEX 2026 🧠 (Idea Presentation Round Participation)",
+  description: "Certificate of Achievement presented to <strong>Pranav Samadhan Khaire</strong> for participating in the Idea Presentation Round of DIPEX-2026.",
+  details: [
+    "<strong>Event:</strong> DIPEX 2026 – Idea Presentation Round",
+    "<strong>Theme:</strong> Agriculture Technology",
+    "<strong>Organizer:</strong> SRIJAN – A DIPEX Centre for Entrepreneurship Development",
+    "<strong>Dates:</strong> 8th February 2026",
+    "<strong>Supported by:</strong> ABVP, MAGIC (Marathwada Accelerator for Growth & Incubation Council), MIT CSN"
+  ],
+  signatories: [
+    "🖊️ Shri. Ram Bhogale – President, SRIJAN Trust",
+    "🖊️ Shri. Kanak Kawadiwale – Convenor, DIPEX-2026"
+  ],
+  images: ["img/depex.jpg","img/depex2.jpg","img/depex3.jpg"],
+  team: [
+    { name: "Pranav Khaire", role: "Team Leader", photo: "member/pranav.webp" },
+    { name: "Sakshi Alane", role: "Team Member", photo: "member/female.avif" },
+    { name: "Jaya Kharate", role: "Team Member", photo: "member/female.avif" },
+    { name: "Piyush Jaybhaye", role: "Team Member", photo: "member/piyush.jpg" },
+    { name: "Varad Deshpande", role: "Team Member", photo: "member/male.avif" }
+  ]
+},
       {
         title: "Hacksphere Hackathon 🏅 (Participation)",
         description: "Certificate of Participation presented to <strong>Pranav Samadhan Khaire</strong> for participating in Hacksphere at Cogni-Sphere 2025.",
