@@ -122,6 +122,25 @@ export default function Timeline() {
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedId, setExpandedId] = useState(null);
 
+  // Infinite Scroll State
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  // Infinite Scroll Listener
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 800) {
+        setVisibleCount(prev => Math.min(prev + 2, timelineData.length));
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Reset infinite scroll count when filter or search changes
+  React.useEffect(() => {
+    setVisibleCount(3);
+  }, [activeFilter, searchQuery]);
+
   const filteredData = useMemo(() => {
     return timelineData.filter(item => {
       const matchesFilter = activeFilter === 'All' || item.category === activeFilter;
@@ -189,7 +208,7 @@ export default function Timeline() {
         {/* Timeline List */}
         <div className="space-y-12">
           <AnimatePresence>
-            {filteredData.map((item, idx) => {
+            {filteredData.slice(0, visibleCount).map((item, idx) => {
               const isExpanded = expandedId === item.id;
 
               return (
@@ -333,6 +352,12 @@ export default function Timeline() {
           {filteredData.length === 0 && (
             <div className="text-center py-20 text-theme-disabled">
               No competitions found matching your search criteria.
+            </div>
+          )}
+
+          {filteredData.length > visibleCount && (
+            <div className="text-center py-10">
+              <div className="inline-block w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
             </div>
           )}
         </div>
