@@ -1,36 +1,16 @@
-# My Portfolio Website
+# React + Vite
 
-Welcome to my personal portfolio and team showcase! 
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-This repository contains the completely revamped, React-based web application that serves as a centralized hub for all my personal projects, hackathon achievements, and team collaborations. 
+Currently, two official plugins are available:
 
-## Features
-- **Project Showcase:** Highlights major technical projects and web applications.
-- **Achievements Timeline:** An interactive timeline documenting all competitions, hackathons, and awards.
-- **Team Directory:** A centralized "Meet the Team" dashboard dynamically mapping each member to their respective projects and competitions.
-- **Certifications:** A coverflow gallery of my verified digital certificates.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tech Stack
-- **Frontend:** React, Vite, Tailwind CSS, Framer Motion
-- **Icons:** Lucide React
-- **Routing:** React Router DOM
+## React Compiler
 
-## Running Locally
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-To run this project locally on your machine:
+## Expanding the Oxlint configuration
 
-1. Open your terminal and navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install the dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-## Repository Migration
-*(Note: This repository was recently migrated from a legacy HTML/CSS architecture to a modern React stack. All legacy files have been cleaned up and replaced with the new source code).*
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
