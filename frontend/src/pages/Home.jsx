@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LoadingSpinner from '../components/LoadingSpinner';
+import LazySection from '../components/LazySection';
 
 // Initial render components (above fold)
 import HeroSection from './home/HeroSection';
@@ -30,16 +31,22 @@ export default function Home() {
       {/* 3. Engineering Journey */}
       <EngineeringTimeline />
       
-      {/* 5. Featured Projects */}
+      <LazySection minHeight="800px">
+        {/* 5. Featured Projects */}
         <ProjectShowcase />
+      </LazySection>
         
+      <LazySection minHeight="600px">
         {/* 8. Hackathons & Achievements */}
         <HackathonPreview />
+      </LazySection>
         
+      <LazySection minHeight="600px">
         {/* 10. Certificates */}
         <section className="bg-theme-bg">
           <CertificateCoverflow />
         </section>
+      </LazySection>
       
       <Footer />
     </div>
