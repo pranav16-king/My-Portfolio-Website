@@ -230,7 +230,7 @@ export default function Timeline() {
                         modules={[Autoplay, EffectFade]}
                         effect="fade"
                         autoplay={{ delay: 2500, disableOnInteraction: false }}
-                        loop={true}
+                        loop={item.images.length > 1}
                         allowTouchMove={false}
                         className="w-full h-full"
                       >
