@@ -1,0 +1,355 @@
+{
+  "competitions": [
+    {
+      "id": "comp_1",
+      "folderName": "compition 1 st",
+      "title": "HackSphere 2025 – Hackathon Participation",
+      "description": "This repository contains the work and documentation for our team's participation in **HackSphere**, a 2-day Technical & Non-Technical Hackathon organized as part of **Cogni-Sphere 2025**.\r\n\r\nThe event provided an opportunity to collaborate, solve real-world problems, develop innovative solutions, an...",
+      "certificates": [
+        "/assets/competitions/comp1_hacksphere_page-certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp1_team_image.png",
+        "/assets/competitions/comp1_team_image_.png"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_2",
+      "folderName": "COMPITION 10",
+      "title": "💡 IGNITION 2K26 – Inspira Idea Presentation",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp2_ignite_presentaion_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp2_team_image_.png",
+        "/assets/competitions/comp2_team_image.jpeg",
+        "/assets/competitions/comp2_teamimage.png"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_3",
+      "folderName": "COMPITION 11",
+      "title": "🇮🇳 Build for Bharat 2026 – National Innovation Hackathon",
+      "description": "",
+      "certificates": [],
+      "teamImages": [
+        "/assets/competitions/comp3_build_for_bharat_hacketon_page-0001.jpg",
+        "/assets/competitions/comp3_team_image_.png",
+        "/assets/competitions/comp3_team_image_.png",
+        "/assets/competitions/comp3_team_image_.png",
+        "/assets/competitions/comp3_team_image.png"
+      ],
+      "projectImages": [
+        "/assets/competitions/comp3_project_.png",
+        "/assets/competitions/comp3_project_.png",
+        "/assets/competitions/comp3_project-.png",
+        "/assets/competitions/comp3_project.png"
+      ]
+    },
+    {
+      "id": "comp_4",
+      "folderName": "compition 2",
+      "title": "Cogni-Sphere 2025 Project Competition – 1st Rank",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp4_project_compition__certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp4_team_image.png"
+      ],
+      "projectImages": [
+        "/assets/competitions/comp4_project_image.png"
+      ]
+    },
+    {
+      "id": "comp_5",
+      "folderName": "compition 3",
+      "title": "🥈 SANKALPANA 2025 – District Level Technical Competition",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp5_2_nd_rank_sankalpana_2025_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp5_team_image_.png",
+        "/assets/competitions/comp5_team_image_.png",
+        "/assets/competitions/comp5_team_image.png"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_6",
+      "folderName": "compition 4",
+      "title": "DIPEX 2026 – Idea Presentation Round",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp6_dipex_presentaion_round_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp6_team_image_.png",
+        "/assets/competitions/comp6_team_image_.png",
+        "/assets/competitions/comp6_team_image.png"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_7",
+      "folderName": "compition 5",
+      "title": "Lightning Pitch 2026 – First Place Winner",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp7_nanded_pitching_compition_winner_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp7_team_image_.png",
+        "/assets/competitions/comp7_team_image_.png",
+        "/assets/competitions/comp7_team_image.png"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_8",
+      "folderName": "compition 6",
+      "title": "🚀 HackFusion 3 – Hackathon Participation",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp8_hackfusion_hacketon_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp8_team_image_.png",
+        "/assets/competitions/comp8_team_image_.png",
+        "/assets/competitions/comp8_team_image_.png",
+        "/assets/competitions/comp8_team_image_.png",
+        "/assets/competitions/comp8_team_image.png"
+      ],
+      "projectImages": [
+        "/assets/competitions/comp8_project_image_2.png",
+        "/assets/competitions/comp8_project_image.png"
+      ]
+    },
+    {
+      "id": "comp_9",
+      "folderName": "compition 7",
+      "title": "🌍 DIPEX 2026 – State Level Working Model Exhibition & Competition",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp9_dipex_final_participate_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp9_team_image_.png",
+        "/assets/competitions/comp9_team_image_.png",
+        "/assets/competitions/comp9_team_image_.png",
+        "/assets/competitions/comp9_team_image_.png",
+        "/assets/competitions/comp9_team_image.png",
+        "/assets/competitions/comp9_teamimage.png"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_10",
+      "folderName": "compition 8",
+      "title": "Honeywell Sustainability Innovation Challenge 2026",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp10_honeywell_winner_certificate.jpg"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp10_team_image_.jpeg",
+        "/assets/competitions/comp10_team_image_.jpeg",
+        "/assets/competitions/comp10_team_image_.jpeg",
+        "/assets/competitions/comp10_team_image_.jpeg",
+        "/assets/competitions/comp10_team_image.jpeg",
+        "/assets/competitions/comp10_team_image.jpeg"
+      ],
+      "projectImages": []
+    },
+    {
+      "id": "comp_11",
+      "folderName": "COMPITION 9",
+      "title": "🦈 ZENTRIX'26 – Sharkpreneur Champion",
+      "description": "",
+      "certificates": [
+        "/assets/competitions/comp11_certificate.png"
+      ],
+      "teamImages": [
+        "/assets/competitions/comp11_team_image_(1).jpeg",
+        "/assets/competitions/comp11_team_image_(2).jpeg",
+        "/assets/competitions/comp11_team_image_(3).jpeg",
+        "/assets/competitions/comp11_team_image_(4).jpeg"
+      ],
+      "projectImages": []
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj_3",
+      "competitionId": "comp_3",
+      "title": "🏥 HealthSpire — AI-Powered Emergency Healthcare Response Platform",
+      "description": "",
+      "features": [],
+      "techStack": [],
+      "images": [
+        "/assets/competitions/comp3_project_.png",
+        "/assets/competitions/comp3_project_.png",
+        "/assets/competitions/comp3_project-.png",
+        "/assets/competitions/comp3_project.png"
+      ]
+    },
+    {
+      "id": "proj_8",
+      "competitionId": "comp_8",
+      "title": "SentinelRx AI — Complete Healthcare & Pharmacy Platform",
+      "description": "",
+      "features": [],
+      "techStack": [],
+      "images": [
+        "/assets/competitions/comp8_project_image_2.png",
+        "/assets/competitions/comp8_project_image.png"
+      ]
+    },
+    {
+      "id": "proj_zerocarbonix",
+      "title": "Zerocarbonix — Carbon Credit MRV & Trading System",
+      "description": "An end-to-end ClimateTech platform that digitizes the complete carbon credit lifecycle using AI and blockchain. The system automates Measurement, Reporting & Verification (MRV), enables secure carbon credit issuance, transparent trading, and permanent retirement while supporting ESG reporting and Scope 1, 2, & 3 emissions tracking. It connects farmers, industries, auditors, regulators, and financial institutions through a unified digital ecosystem, making carbon markets more transparent, efficient, and accessible.",
+      "features": [
+        "AI-powered MRV & carbon estimation",
+        "Blockchain-secured carbon credit ledger",
+        "Carbon credit trading & retirement",
+        "Scope 1, 2 & 3 emission monitoring",
+        "Farmer mobile app with GPS & multilingual support",
+        "Auditor & regulator dashboards",
+        "ESG reporting & analytics",
+        "Secure payment integration"
+      ],
+      "techStack": [
+        "AI/ML",
+        "FastAPI",
+        "React",
+        "PostgreSQL",
+        "Blockchain",
+        "GIS",
+        "IoT",
+        "Docker"
+      ],
+      "images": [
+        "/assets/projects/zerocarbonix/zerocarbnix (1).png",
+        "/assets/projects/zerocarbonix/zerocarbnix (2).png",
+        "/assets/projects/zerocarbonix/zerocarbnix (3).png",
+        "/assets/projects/zerocarbonix/zerocarbnix (4).png"
+      ]
+    },
+    {
+      "id": "proj_overthinkai",
+      "title": "OverthinkAI — A Structured Debate System",
+      "description": "A four-agent deliberation engine that acts as a structured debate system rather than a standard chatbot. It orchestrates a debate between a Realist, Visionary, Ethicist, and an Adversarial Auditor based on your resource constraints, core values, and risk tolerance. The system enforces strict architectural constraints—pausing execution at a Human Gate if conflict scores exceed 65/100, forcing manual re-weighting of priorities. It provides structured artifacts like a tradeoff matrix, timeline projections, and low-stakes action experiments.",
+      "features": [
+        "Multi-agent debate engine (Realist, Visionary, Ethicist, Auditor)",
+        "Live Tavily web search integration for grounded data",
+        "Adversarial Auditor with LangGraph interrupt_before gating mechanism",
+        "Pydantic-enforced lack of final recommendation to ensure human agency",
+        "Five structured artifacts output (Matrix, Timeline, Actions, Questions)",
+        "In-memory session checkpointing with SQLite"
+      ],
+      "techStack": [
+        "FastAPI",
+        "Gemini",
+        "Groq (Llama-3.3-70b)",
+        "LangGraph",
+        "Next.js",
+        "Python",
+        "SQLite",
+        "Tailwind CSS",
+        "Tavily Search API",
+        "TypeScript"
+      ],
+      "images": [
+        "/assets/projects/overthinkai/overthinkai.jpg",
+        "/assets/projects/overthinkai/overthinkai 1.jpg",
+        "/assets/projects/overthinkai/overthinkai 2.jpg",
+        "/assets/projects/overthinkai/overthinkai 3.jpg"
+      ]
+    },
+    {
+      "id": "proj_training",
+      "title": "Training Intelligence Platform",
+      "description": "An enterprise-grade Training Intelligence Platform designed to streamline corporate and institutional learning. It provides role-based dashboards, training management, live quizzes, attendance tracking, performance analytics, certificate automation, and comprehensive reporting through a modern, mobile-first interface.",
+      "features": [
+        "Role-based Admin & User dashboards",
+        "Training session and trainer management",
+        "Advanced live quiz system with OTP verification",
+        "Real-time quiz monitoring, ranking, and analytics",
+        "Attendance and performance tracking",
+        "Certificate generation, verification, and PDF download",
+        "Learning materials management",
+        "Reports, audit logs, and analytics dashboard",
+        "Email notifications and campaign management",
+        "Mobile-first responsive design with secure authentication"
+      ],
+      "techStack": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "FastAPI",
+        "MongoDB",
+        "Firebase Authentication",
+        "JWT",
+        "Brevo Email API",
+        "ReportLab",
+        "WebSocket",
+        "Axios"
+      ],
+      "images": [
+        "/assets/projects/training/training-1.png",
+        "/assets/projects/training/training-2.png"
+      ]
+    }
+  ],
+  "mainCertificates": [
+    {
+      "title": "ide bootcaamp aicte_page-0001",
+      "image": "/assets/certificates/ide_bootcaamp_aicte_page-0001.jpg"
+    },
+    {
+      "title": "oracle certificate_page-0001",
+      "image": "/assets/certificates/oracle_certificate_page-0001.jpg"
+    },
+    {
+      "title": "Oracle Fusion Cloud Applications CX Process Essentials Certified - Rel 1_page-0001",
+      "image": "/assets/certificates/Oracle_Fusion_Cloud_Applications_CX_Process_Essentials_Certified_-_Rel_1_page-0001.jpg"
+    },
+    {
+      "title": "Pranav Khaire-Certificate NSUT_page-0001",
+      "image": "/assets/certificates/Pranav_Khaire-Certificate_NSUT_page-0001.jpg"
+    },
+    {
+      "title": "Pranav_Khaire_TCS ION  Certificate_page-0001",
+      "image": "/assets/certificates/Pranav_Khaire_TCS_ION_Certificate_page-0001.jpg"
+    },
+    {
+      "title": "skill india  microsoft_page-0001",
+      "image": "/assets/certificates/skill_india_microsoft_page-0001.jpg"
+    },
+    {
+      "title": "Smart India Havcketon_page-0001",
+      "image": "/assets/certificates/Smart_India_Havcketon_page-0001.jpg"
+    },
+    {
+      "title": "TCS iON Career Edge - IT Primer_page-0001",
+      "image": "/assets/certificates/TCS_iON_Career_Edge_-_IT_Primer_page-0001.jpg"
+    },
+    {
+      "title": "TechTonic2k26 certificate Pranav Samadhan Khaire_page-0001",
+      "image": "/assets/certificates/TechTonic2k26_certificate_Pranav_Samadhan_Khaire_page-0001.jpg"
+    },
+    {
+      "title": "wadwani bootcamp_page-0001",
+      "image": "/assets/certificates/wadwani_bootcamp_page-0001.jpg"
+    },
+    {
+      "title": "zomato haceton_page-0001",
+      "image": "/assets/certificates/zomato_haceton_page-0001.jpg"
+    }
+  ]
+}
