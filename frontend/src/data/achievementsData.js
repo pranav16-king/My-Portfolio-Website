@@ -538,13 +538,24 @@ export const competitions = [
 
 export const internships = [
   {
-    "id": "intern-1",
-    "company": "[Company Name]",
-    "role": "[Internship Role]",
-    "duration": "[Start Date] - [End Date]",
-    "description": "Please provide details about your internship experience, key responsibilities, and technologies used.",
+    "id": "intern-hepro",
+    "company": "HEPro (Great Leaders Institute Pvt. Ltd.)",
+    "role": "AI & Machine Learning Intern",
+    "duration": "12 January 2026 – 12 March 2026 (2 Months)",
+    "description": "Built an AI-powered student mentoring intelligence system (HEPro AI+). Developed algorithms for academic, wellness, productivity, and career readiness scoring. Applied machine learning (K-Means Clustering) for student segmentation and behavioral analysis. Designed mentor recommendation and intervention logic.",
+    "skills": ["Python", "Pandas", "Scikit-learn", "Machine Learning", "Data Analytics"],
     "certificates": [
-      "/assets/internships/WhatsApp Image 2026-07-03 at 08.53.45.jpeg",
+      "/assets/internships/WhatsApp Image 2026-07-03 at 08.53.45.jpeg"
+    ]
+  },
+  {
+    "id": "intern-3skill",
+    "company": "3Skill Training",
+    "role": "AI & Machine Learning Intern",
+    "duration": "2026",
+    "description": "Successfully completed an AI & Machine Learning internship focused on practical implementation. Gained hands-on experience through project-based learning. Developed industry-oriented AI/ML skills aligned with professional standards and strengthened knowledge of machine learning concepts and practical applications.",
+    "skills": ["Artificial Intelligence", "Machine Learning", "Project-Based Development", "Analytical Thinking"],
+    "certificates": [
       "/assets/internships/WhatsApp Image 2026-07-03 at 08.54.56.jpeg"
     ]
   }

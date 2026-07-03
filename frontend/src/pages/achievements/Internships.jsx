@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar, ChevronRight } from 'lucide-react';
+import { Briefcase, Calendar, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { internships } from '../../data/achievementsData';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
@@ -29,7 +29,7 @@ export default function Internships() {
         </motion.div>
 
         {/* Internship Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-12">
           {internships.map((internship, index) => (
             <motion.div 
               key={internship.id || index}
@@ -58,9 +58,21 @@ export default function Internships() {
                 </div>
 
                 {/* Description */}
-                <p className="text-theme-text/80 mb-8 leading-relaxed flex-grow">
+                <p className="text-theme-text/80 mb-6 leading-relaxed flex-grow text-lg">
                   {internship.description}
                 </p>
+
+                {/* Skills */}
+                {internship.skills && internship.skills.length > 0 && (
+                  <div className="mb-8 flex flex-wrap gap-2">
+                    {internship.skills.map((skill, idx) => (
+                      <span key={idx} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-indigo-500/10 text-indigo-300 text-xs font-semibold uppercase tracking-wider border border-indigo-500/20">
+                        <CheckCircle2 className="w-3 h-3" />
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                )}
 
                 {/* Certificates / Proof */}
                 {internship.certificates && internship.certificates.length > 0 && (
