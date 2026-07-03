@@ -436,7 +436,7 @@ export const competitions = [
     ],
     "images": {
       "certificate": "/assets/certificates/techtonic_2k26.jpg",
-      "team": ["/assets/certificates/techtonic_2k26.jpg"],
+      "team": [],
       "project": []
     },
     "techStack": []
