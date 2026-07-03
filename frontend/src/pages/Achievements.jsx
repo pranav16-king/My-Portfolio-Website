@@ -10,6 +10,7 @@ import Timeline from './achievements/Timeline';
 import TeamAvatars from './achievements/TeamAvatars';
 import CompetitionGallery from './achievements/CompetitionGallery';
 import CertificateCoverflow from './achievements/CertificateCoverflow';
+import LazySection from '../components/LazySection';
 
 
 export default function Achievements() {
@@ -45,11 +46,18 @@ export default function Achievements() {
       <main>
         <HeroSection />
         <BentoHighlights />
-        <Timeline />
-        <TeamAvatars />
-        <CertificateCoverflow />
-        <CompetitionGallery />
-
+        <LazySection minHeight="800px">
+          <Timeline />
+        </LazySection>
+        <LazySection minHeight="400px">
+          <TeamAvatars />
+        </LazySection>
+        <LazySection minHeight="600px">
+          <CertificateCoverflow />
+        </LazySection>
+        <LazySection minHeight="800px">
+          <CompetitionGallery />
+        </LazySection>
       </main>
     </div>
   );

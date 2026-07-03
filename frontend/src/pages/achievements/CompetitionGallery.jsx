@@ -65,6 +65,8 @@ export default function CompetitionGallery() {
                   <PhotoView src={photo.src}>
                     <div className="relative w-full overflow-hidden flex items-center justify-center">
                       <img 
+                        loading="lazy"
+                        decoding="async"
                         src={photo.src} 
                         alt={photo.comp}
                         loading="lazy"
@@ -103,6 +105,7 @@ export default function CompetitionGallery() {
                       src={photo.src} 
                       alt="Background Blur"
                       loading="lazy"
+                      decoding="async"
                       className="absolute inset-0 w-full h-full object-cover blur-xl opacity-60"
                     />
                     {/* Main Image */}
@@ -110,6 +113,7 @@ export default function CompetitionGallery() {
                       src={photo.src} 
                       alt={photo.comp}
                       loading="lazy"
+                      decoding="async"
                       className="relative z-10 w-full h-full object-contain filter contrast-110 saturate-110"
                     />
                   </div>
