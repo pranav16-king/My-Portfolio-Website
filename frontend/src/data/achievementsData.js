@@ -421,6 +421,25 @@ export const competitions = [
       "project": []
     },
     "techStack": []
+  },
+  {
+    "id": "COMPITION 10",
+    "title": "TECHTONIC 2K26 – WINNER",
+    "date": "18 May 2026",
+    "event": "Pitch Craft (Ideathon)",
+    "description": "Organized by ECESA and IETE ISF at CSMSS Chh. Shahu College of Engineering.",
+    "team": [
+      "🏆 Winner",
+      "👨‍💻 Pranav Khaire",
+      "Participant",
+      "Responsibilities"
+    ],
+    "images": {
+      "certificate": "/assets/certificates/techtonic_2k26.jpg",
+      "team": ["/assets/certificates/techtonic_2k26.jpg"],
+      "project": []
+    },
+    "techStack": []
   }
 ];
 
@@ -456,10 +475,6 @@ export const extraCertificates = [
   {
     "title": "TCS iON Career Edge - IT Primer_page-0001",
     "image": "/assets/certificates/TCS iON Career Edge - IT Primer_page-0001.jpg"
-  },
-  {
-    "title": "TechTonic2k26 certificate Pranav Samadhan Khaire_page-0001",
-    "image": "/assets/certificates/TechTonic2k26 certificate Pranav Samadhan Khaire_page-0001.jpg"
   },
   {
     "title": "wadwani bootcamp_page-0001",

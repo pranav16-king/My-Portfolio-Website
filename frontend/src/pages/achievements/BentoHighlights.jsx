@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Trophy, Zap, Star, Shield, Award, ArrowUpRight } from 'lucide-react';
+import { Trophy, Zap, Star, Shield, Award, Medal, ArrowUpRight } from 'lucide-react';
 import { competitions } from '../../data/achievementsData';
 
-const icons = [Trophy, Zap, Star, Shield, Award];
+const icons = [Trophy, Zap, Star, Shield, Award, Medal];
 const colors = [
   'from-[#ffb347] to-[#ffcc33]', // Gold 1
   'from-[#00c6ff] to-[#0072ff]', // Cyan/Blue
   'from-[#f12711] to-[#f5af19]', // Fire
   'from-[#8E2DE2] to-[#4A00E0]', // Purple/Indigo
-  'from-[#11998e] to-[#38ef7d]'  // Emerald
+  'from-[#11998e] to-[#38ef7d]', // Emerald
+  'from-[#ff4b2b] to-[#ff416c]'  // Ruby Red
 ];
 
 const layouts = [
   { colSpan: 'md:col-span-2', rowSpan: 'md:row-span-2' },
+  { colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
   { colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
   { colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
   { colSpan: 'md:col-span-1', rowSpan: 'md:row-span-1' },
@@ -26,15 +28,15 @@ const winningComps = competitions.filter(comp => {
   return winningKeywords.some(kw => t.includes(kw));
 });
 
-const bentoItems = winningComps.slice(0, 5).map((comp, idx) => ({
+const bentoItems = winningComps.slice(0, 6).map((comp, idx) => ({
   title: comp.title || 'Competition',
   badge: (comp.title.toLowerCase().includes('winner') || comp.title.toLowerCase().includes('1st') || comp.title.toLowerCase().includes('first') || comp.title.toLowerCase().includes('champion')) ? '🏆 Champion' : '🏅 Honors',
   year: comp.date.split(' ').pop() || '2025',
   event: comp.event || 'National Level Event',
-  colSpan: layouts[idx % 5].colSpan,
-  rowSpan: layouts[idx % 5].rowSpan,
-  icon: icons[idx % 5],
-  color: colors[idx % 5],
+  colSpan: layouts[idx % 6].colSpan,
+  rowSpan: layouts[idx % 6].rowSpan,
+  icon: icons[idx % 6],
+  color: colors[idx % 6],
   image: comp.images.certificate || comp.images.team || (comp.images.project[0] || '/images/school.png')
 }));
 

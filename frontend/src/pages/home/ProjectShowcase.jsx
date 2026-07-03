@@ -103,8 +103,6 @@ const ProjectCard = ({ project, index }) => {
             key={currentImageIndex}
             src={project.images[currentImageIndex]}
             alt={`${project.title} screenshot`}
-            loading="lazy"
-            decoding="async"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

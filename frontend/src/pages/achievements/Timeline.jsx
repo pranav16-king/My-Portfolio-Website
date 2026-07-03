@@ -26,7 +26,9 @@ const enrichedData = [
 ];
 
 // Map raw competitions data to timeline format
-const timelineData = competitions.map((comp, idx) => {
+const timelineData = competitions
+  .filter(comp => !comp.title.includes("TECHTONIC"))
+  .map((comp, idx) => {
   const images = [];
   if (Array.isArray(comp.images.team)) {
     images.push(...comp.images.team);
@@ -122,25 +124,6 @@ export default function Timeline() {
   const [searchQuery, setSearchQuery] = useState('');
   const [expandedId, setExpandedId] = useState(null);
 
-  // Infinite Scroll State
-  const [visibleCount, setVisibleCount] = useState(3);
-
-  // Infinite Scroll Listener
-  React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 800) {
-        setVisibleCount(prev => Math.min(prev + 2, timelineData.length));
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Reset infinite scroll count when filter or search changes
-  React.useEffect(() => {
-    setVisibleCount(3);
-  }, [activeFilter, searchQuery]);
-
   const filteredData = useMemo(() => {
     return timelineData.filter(item => {
       const matchesFilter = activeFilter === 'All' || item.category === activeFilter;
@@ -208,7 +191,7 @@ export default function Timeline() {
         {/* Timeline List */}
         <div className="space-y-12">
           <AnimatePresence>
-            {filteredData.slice(0, visibleCount).map((item, idx) => {
+            {filteredData.map((item, idx) => {
               const isExpanded = expandedId === item.id;
 
               return (
@@ -230,7 +213,7 @@ export default function Timeline() {
                         modules={[Autoplay, EffectFade]}
                         effect="fade"
                         autoplay={{ delay: 2500, disableOnInteraction: false }}
-                        loop={item.images.length > 1}
+                        loop={true}
                         allowTouchMove={false}
                         className="w-full h-full"
                       >
@@ -352,12 +335,6 @@ export default function Timeline() {
           {filteredData.length === 0 && (
             <div className="text-center py-20 text-theme-disabled">
               No competitions found matching your search criteria.
-            </div>
-          )}
-
-          {filteredData.length > visibleCount && (
-            <div className="text-center py-10">
-              <div className="inline-block w-8 h-8 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
             </div>
           )}
         </div>
