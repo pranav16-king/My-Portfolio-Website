@@ -99,8 +99,8 @@ export const teamMembers = [
     responsibilities: 'User Interface Design, Responsive Development, Design Systems, User Experience Optimization',
     skills: ['React.js', 'UI/UX Design', 'Responsive Design', 'User Experience', 'Frontend Development', 'Design Systems'],
     projectsTogether: ['HealthSpire', 'SentinelRx AI'],
-    competitionsTogether: ['Build for Bharat 2026', 'HackFusion 3'],
-    achievements: ['Qualified Round 1 Build for Bharat', 'Participation HackFusion 3'],
+    competitionsTogether: ['Build for Bharat 2026', 'HackFusion 3', 'Government College Ideathon'],
+    achievements: ['Qualified Round 1 Build for Bharat', 'Participation HackFusion 3', 'Participation Government College Ideathon'],
     links: { github: '#', linkedin: '#', portfolio: '#' }
   },
   {
