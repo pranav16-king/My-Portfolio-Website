@@ -440,6 +440,113 @@ export const competitions = [
       "project": []
     },
     "techStack": []
+  },
+  {
+    "id": "COMPITION 11",
+    "title": "IDE Bootcamp – Edition 3 (Phase I)",
+    "date": "10 April 2026",
+    "event": "AICTE Innovation & Entrepreneurship",
+    "description": "National level bootcamp organized by AICTE, Wadhwani Foundation, and Ministry of Education at KBTCOE Nashik.",
+    "team": [
+      "👨‍💻 Pranav Khaire",
+      "Team Leader",
+      "Responsibilities",
+      "Aniket Tambe",
+      "Team Member",
+      "Responsibilities"
+    ],
+    "images": {
+      "certificate": null,
+      "team": [
+        "/assets/competitions/aicte ide bootcamp nashik/IMG_20260406_141529.jpg",
+        "/assets/competitions/aicte ide bootcamp nashik/IMG_20260409_085145.jpg",
+        "/assets/competitions/aicte ide bootcamp nashik/WhatsApp Image 2026-07-03 at 08.49.33.jpeg",
+        "/assets/competitions/aicte ide bootcamp nashik/WhatsApp Image 2026-07-03 at 08.50.00.jpeg",
+        "/assets/competitions/aicte ide bootcamp nashik/WhatsApp Image 2026-07-03 at 08.50.04.jpeg",
+        "/assets/competitions/aicte ide bootcamp nashik/WhatsApp Image 2026-07-03 at 08.50.05.jpeg"
+      ],
+      "project": []
+    },
+    "techStack": []
+  },
+  {
+    "id": "COMPITION 12",
+    "title": "IDEATHON 9.0",
+    "date": "30 January 2026",
+    "event": "National Level Idea Competition",
+    "description": "National Level Innovation & Idea Presentation Competition. Pitch deck evaluation on solving real-world challenges.",
+    "team": [
+      "👨‍💻 Pranav Khaire",
+      "Team Leader",
+      "Responsibilities",
+      "Sakshi Alane",
+      "Team Member",
+      "Responsibilities",
+      "Sakshi Bamne",
+      "Team Member",
+      "Responsibilities",
+      "Piyush Jaybhaye",
+      "Team Member",
+      "Responsibilities",
+      "Aniket Tambe",
+      "Team Member",
+      "Responsibilities"
+    ],
+    "images": {
+      "certificate": null,
+      "team": [
+        "/assets/competitions/ideathon/IMG_20260430_124450.jpg",
+        "/assets/competitions/ideathon/IMG_20260430_135601.jpg",
+        "/assets/competitions/ideathon/IMG_20260430_135710.jpg"
+      ],
+      "project": []
+    },
+    "techStack": []
+  },
+  {
+    "id": "COMPITION 13",
+    "title": "Government College Ideathon",
+    "date": "21 March 2026",
+    "event": "Idea Presentation",
+    "description": "Idea presentation Ideathon organized by Government College of Engineering, Chhatrapati Sambhajinagar.",
+    "team": [
+      "👨‍💻 Pranav Khaire",
+      "Team Member",
+      "Responsibilities",
+      "Parth Kulkarni",
+      "Team Member",
+      "Responsibilities",
+      "Aniket Tambe",
+      "Team Member",
+      "Responsibilities",
+      "Mitali Wadkar",
+      "Team Member",
+      "Responsibilities"
+    ],
+    "images": {
+      "certificate": null,
+      "team": [
+        "/assets/competitions/compition 12 ideas presentaion goverment college ideathon/IMG_20260321_135329712_HDR.jpg",
+        "/assets/competitions/compition 12 ideas presentaion goverment college ideathon/IMG_20260321_150852880_HDR.jpg",
+        "/assets/competitions/compition 12 ideas presentaion goverment college ideathon/IMG_20260321_151040.jpg"
+      ],
+      "project": []
+    },
+    "techStack": []
+  }
+];
+
+export const internships = [
+  {
+    "id": "intern-1",
+    "company": "[Company Name]",
+    "role": "[Internship Role]",
+    "duration": "[Start Date] - [End Date]",
+    "description": "Please provide details about your internship experience, key responsibilities, and technologies used.",
+    "certificates": [
+      "/assets/internships/WhatsApp Image 2026-07-03 at 08.53.45.jpeg",
+      "/assets/internships/WhatsApp Image 2026-07-03 at 08.54.56.jpeg"
+    ]
   }
 ];
 
@@ -977,4 +1084,15 @@ export const teamMembers = [
     "role": "Member",
     "avatar": "https://ui-avatars.com/api/?name=Research%20%26%20Business%20Analysis&background=random"
   }
+];
+
+export const memoryGallery = [
+  "/assets/memory_gallery/IMG-20260302-WA0021.jpg",
+  "/assets/memory_gallery/IMG-20260302-WA0032.jpg",
+  "/assets/memory_gallery/IMG_20251014_171208.jpg",
+  "/assets/memory_gallery/IMG_20260305_140335.jpg",
+  "/assets/memory_gallery/IMG_20260311_121751618_HDR_PORTRAIT.jpg",
+  "/assets/memory_gallery/IMG_20260311_121950278_HDR.jpg",
+  "/assets/memory_gallery/WhatsApp Image 2026-07-03 at 08.50.28.jpeg",
+  "/assets/memory_gallery/WhatsApp Image 2026-07-03 at 08.52.47.jpeg"
 ];

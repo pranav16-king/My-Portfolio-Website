@@ -136,14 +136,17 @@ export default function Timeline() {
         "HackSphere 2025",
         "Cogni-Sphere 2025",
         "SANKALPANA",
-        "DIPEX 2026 – Idea Presentation", // DIPEX Idea
+        "DIPEX 2026", // DIPEX Idea
         "Lightning Pitch",
         "HackFusion",
         "State Level", // DIPEX State
         "Honeywell",
         "ZENTRIX",
         "IGNITION",
-        "Build for Bharat"
+        "Build for Bharat",
+        "IDE Bootcamp",
+        "IDEATHON",
+        "Government College Ideathon"
       ];
 
       const getIndex = (name) => {

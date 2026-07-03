@@ -5,7 +5,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { MapPin, Calendar } from 'lucide-react';
 
-import { competitions } from '../../data/achievementsData';
+import { competitions, memoryGallery } from '../../data/achievementsData';
 
 const photos = competitions.flatMap(comp => {
   const compPhotos = [];
@@ -18,6 +18,16 @@ const photos = competitions.flatMap(comp => {
   }
   return compPhotos;
 });
+
+// Add extra memory gallery images
+if (memoryGallery && memoryGallery.length > 0) {
+  memoryGallery.forEach(img => {
+    photos.push({ src: img, comp: 'Memories', loc: 'India', year: '2026' });
+  });
+}
+
+// Randomize slightly for masonry effect
+const shuffledPhotos = photos.sort(() => Math.random() - 0.5);
 
 const breakpointColumnsObj = {
   default: 3,
@@ -52,7 +62,7 @@ export default function CompetitionGallery() {
               className="flex w-auto -ml-8"
               columnClassName="pl-8 bg-clip-padding"
             >
-              {photos.map((photo, idx) => (
+              {shuffledPhotos.map((photo, idx) => (
                 <motion.div 
                   key={idx}
                   initial={{ opacity: 0, y: 30, scale: 0.95 }}
@@ -69,7 +79,6 @@ export default function CompetitionGallery() {
                         decoding="async"
                         src={photo.src} 
                         alt={photo.comp}
-                        loading="lazy"
                         className="w-full h-auto block filter contrast-[1.05] saturate-[1.05] transition-transform duration-700 group-hover:scale-[1.03]"
                       />
                     </div>
@@ -90,7 +99,7 @@ export default function CompetitionGallery() {
 
           {/* Mobile Horizontal Swipe Gallery */}
           <div className="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-4 pb-8 px-6 -mx-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            {photos.map((photo, idx) => (
+            {shuffledPhotos.map((photo, idx) => (
               <motion.div 
                 key={`mobile-${idx}`}
                 initial={{ opacity: 0, scale: 0.9 }}
