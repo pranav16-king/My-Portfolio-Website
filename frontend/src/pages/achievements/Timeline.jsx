@@ -61,7 +61,6 @@ const timelineData = competitions
       if(enriched.title.includes('Build for Bharat')) return 'HealthSpire';
       if(enriched.title.includes('HackFusion')) return 'SentinelRx AI';
       if(enriched.title.includes('Cogni-Sphere')) return 'Cogni-Sphere Project';
-      if(enriched.title.includes('HackSphere')) return 'OverthinkAI';
       if(enriched.title.includes('SANKALPANA')) return 'SANKALPANA Project';
       if(enriched.title.includes('Lightning Pitch')) return 'Lightning Pitch Project';
       if(enriched.title.includes('Honeywell')) return 'Honeywell Project';

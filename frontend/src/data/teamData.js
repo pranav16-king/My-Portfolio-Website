@@ -33,7 +33,7 @@ export const teamMembers = [
     about: 'Varad has played a critical role in project research, feasibility analysis, market validation, competitive analysis, documentation, and business strategy.',
     responsibilities: 'Research Analysis, Market Validation, Competitor Analysis, Technical Documentation, Business Insights, Sustainability Research',
     skills: ['Technical Research', 'Market Research', 'Business Analysis', 'Documentation', 'Feasibility Studies', 'Literature Review', 'Innovation Validation'],
-    projectsTogether: ['OverthinkAI', 'Cogni-Sphere Project', 'SANKALPANA Project', 'Zerocarbonix', 'Lightning Pitch Project', 'Honeywell Project', 'Sharkpreneur Project'],
+    projectsTogether: ['Cogni-Sphere Project', 'SANKALPANA Project', 'Zerocarbonix', 'Lightning Pitch Project', 'Honeywell Project', 'Sharkpreneur Project'],
     competitionsTogether: ['HackSphere 2025', 'Cogni-Sphere 2025', 'SANKALPANA 2025', 'DIPEX 2026 - Idea Presentation', 'DIPEX 2026 - State Level', 'Lightning Pitch 2026', 'Honeywell Challenge', 'Sharkpreneur'],
     achievements: ['1st Rank Cogni-Sphere', '1st Place Lightning Pitch', 'Winner Sharkpreneur', '2nd Prize SANKALPANA', 'Runner-Up Honeywell', 'State Level Finalist DIPEX'],
     links: { github: '#', linkedin: '#', portfolio: '#' }
@@ -46,7 +46,7 @@ export const teamMembers = [
     about: 'Parth specializes in backend engineering, API development, database architecture, and system integration.',
     responsibilities: 'API Development, Database Design, Authentication Systems, Backend Scalability, Data Modeling',
     skills: ['FastAPI', 'Backend Development', 'PostgreSQL', 'MongoDB', 'REST APIs', 'Database Design', 'System Integration'],
-    projectsTogether: ['SentinelRx AI', 'Honeywell Project', 'Sharkpreneur Project'],
+    projectsTogether: ['OverthinkAI', 'SentinelRx AI', 'Honeywell Project', 'Sharkpreneur Project'],
     competitionsTogether: ['HackFusion 3', 'Honeywell Challenge', 'Sharkpreneur'],
     achievements: ['Winner Sharkpreneur', 'Runner-Up Honeywell', 'Participation HackFusion 3'],
     links: { github: '#', linkedin: '#', portfolio: '#' }
@@ -59,7 +59,7 @@ export const teamMembers = [
     about: 'Piyush focuses on frontend development, UI components, and integration.',
     responsibilities: 'Frontend Implementation, UI Integration, Testing Support',
     skills: ['Frontend Development', 'UI Components', 'Responsive Design', 'Integration'],
-    projectsTogether: ['OverthinkAI', 'Zerocarbonix'],
+    projectsTogether: ['Zerocarbonix'],
     competitionsTogether: ['HackSphere 2025', 'DIPEX 2026 - Idea Presentation', 'DIPEX 2026 - State Level'],
     achievements: ['State Level Finalist DIPEX', 'Participation HackSphere 2025'],
     links: { github: '#', linkedin: '#', portfolio: '#' }
