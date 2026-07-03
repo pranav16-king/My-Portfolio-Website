@@ -153,12 +153,12 @@ export default function HeroSection() {
  className="flex flex-col w-full sm:w-auto sm:flex-row items-center gap-3 lg:gap-4 mt-4 lg:mt-8"
  >
  <div className="flex w-full gap-3">
- <Link to="/projects" className="flex-1 lg:flex-none">
+ <a href="#projects" className="flex-1 lg:flex-none">
  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex justify-center items-center gap-2 px-6 py-3.5 rounded-[18px] bg-white text-[#050816] font-bold shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-shadow">
  Projects <ArrowRight className="w-4 h-4" />
  </motion.div>
- </Link>
- <a href="/resume.pdf" target="_blank" className="flex-1 lg:flex-none">
+ </a>
+ <a href="/pranav-Resume_2025.pdf" target="_blank" className="flex-1 lg:flex-none">
  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="flex justify-center items-center gap-2 px-6 py-3.5 rounded-[18px] bg-white/5 hover:bg-white/10 border border-theme-border text-white font-medium backdrop-blur-md transition-colors">
  <Download className="w-4 h-4" /> Resume
  </motion.div>

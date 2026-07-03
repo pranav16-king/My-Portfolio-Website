@@ -60,7 +60,8 @@ export default function FinalCTA() {
               </a>
               
               <a 
-                href="#"
+                href="/pranav-Resume_2025.pdf"
+                target="_blank"
                 className="flex items-center gap-2 px-8 py-4 bg-theme-card hover:bg-theme-card-hover border border-theme-border text-theme-text rounded-2xl font-medium transition-all hover:scale-105 hover:border-theme-border backdrop-blur-md"
               >
                 <FileText className="w-5 h-5" /> Resume

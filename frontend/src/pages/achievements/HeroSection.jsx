@@ -67,9 +67,9 @@ export default function HeroSection() {
                 <Compass className="w-5 h-5 group-hover:rotate-45 transition-transform" /> Explore Journey
               </button>
               
-              <button className="flex items-center gap-2 px-8 py-3.5 bg-theme-card hover:bg-theme-card-hover backdrop-blur-md border border-theme-border text-theme-text rounded-full font-medium transition-colors">
+              <a href="/pranav-Resume_2025.pdf" target="_blank" className="flex items-center gap-2 px-8 py-3.5 bg-theme-card hover:bg-theme-card-hover backdrop-blur-md border border-theme-border text-theme-text rounded-full font-medium transition-colors">
                 <Download className="w-5 h-5" /> Resume
-              </button>
+              </a>
               
 
             </motion.div>
