@@ -136,6 +136,19 @@ I follow a system-first approach where AI is one layer of the solution, not the 
 
 ---
 
+## Technical Skills Summary
+
+Here is a quick overview of my core technical strengths based on my project experience:
+
+- **Frontend Development**: HTML, CSS, JavaScript, Tailwind CSS, UI Components, Responsive Design
+- **Backend & System Development**: Python, Flask, API Design, Authentication Systems
+- **Data Science & Analysis**: NumPy, Pandas, Matplotlib, Data Cleaning & Preprocessing
+- **AI & Machine Learning**: ML Models, Deep Learning, Neural Networks, AI Algorithms
+- **UI/UX & Visual Design**: UI/UX Principles, Wireframes, Prototypes, Visual Design
+- **Git, GitHub & Deployment**: Git, GitHub, Cloud Infrastructure, Project Deployment
+
+---
+
 ## Tech Stack
 
 ### Languages
